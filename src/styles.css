@@ -10,6 +10,12 @@ body{
     text-align: center;
 }
 
+.Cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 .nav{
     background-color: #40513B;
     color: #EDF1D6;
