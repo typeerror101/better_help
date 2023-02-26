@@ -25,8 +25,8 @@ export default function NavBar() {
                 <ul>
                     <CustomButton variant="contained" sx={{margin:1}}  color="success" size="small">
                         <Link to="/login">Login</Link>
-                    </Custom    Button>
-                    <CustomButton color="secondary" >
+                    </CustomButton>
+                    <CustomButton  >
                         <Link to="/getstarted">Get Started</Link>
                     </CustomButton>
                     

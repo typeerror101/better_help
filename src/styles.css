@@ -41,11 +41,17 @@ body{
     padding: .25rem;
 }
 
+
 .nav li.active{
-    background-color: #d2d6b9;
+    border-style: solid;
+    margin: 0;
+    border-width: 0 0 6px 0;
+    border-bottom-color: #EDF1D6;
+    border-bottom-width: 6px;
+    border-radius: 2px;
 }
 
 .nav li:hover{
-    background-color: #8d8e87; 
+    text-decoration: underline;
     
 }
