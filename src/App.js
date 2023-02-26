@@ -1,6 +1,6 @@
-import './App.css';
+import Buisness from './links/Buisness';
 import NavBar from './NavBar';
-import { Route,Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <NavBar/>
       <div className='components'>
           <Routes>
-              <Route path='/business' element={}/>
+              <Route path='/business' element={<Buisness/>}/>
               <Route path='/about'/>
               <Route path='/advice'/>
               <Route path='/faq'/>

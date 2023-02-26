@@ -1,10 +1,17 @@
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
+import { styled } from '@mui/material/styles';
+import { Button } from "@mui/material"
+import { color } from "@mui/system"
+
+const CustomButton = styled(Button)({
+    color: '#EDF1D6'
+});
 
 export default function NavBar() {
     return(
         <div>
-            <nav className="nav-">
-                <link to="/" className="site-title" >Better Help</link>
+            <nav className="nav">
+                <Link to="/" className="site-title" >Better Help</Link>
                 <ul>
                     <CustomLink to="/business">Business</CustomLink>
                     <CustomLink to="/about">About</CustomLink>
@@ -13,8 +20,16 @@ export default function NavBar() {
                     <CustomLink to="/reviews">Reviews</CustomLink>
                     <CustomLink to="/therapistjobs">Therapist Jobs</CustomLink>
                     <CustomLink to="/contact">Contact</CustomLink>
-                    <CustomLink to="/login">Login</CustomLink>
-                    <CustomLink to="/getstarted">Get Started</CustomLink>
+                    
+                </ul>
+                <ul>
+                    <CustomButton variant="contained" sx={{margin:1}}  color="success" size="small">
+                        <Link to="/login">Login</Link>
+                    </Custom    Button>
+                    <CustomButton color="secondary" >
+                        <Link to="/getstarted">Get Started</Link>
+                    </CustomButton>
+                    
                 </ul>
             </nav>
         </div>
