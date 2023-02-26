@@ -4,17 +4,24 @@
 
 body{
     margin: 0;
+    background-color: #609966;
 }
 .components{
-    margin: 1rem;
+    margin: 0rem;
     text-align: center;
 }
 
+.mainText{
+    color: #242d21;
+    margin-bottom: 3rem;
+    margin-top: 1.5rem;
+}
 .Cards{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 3rem;
 }
+
 
 .nav{
     background-color: #40513B;
