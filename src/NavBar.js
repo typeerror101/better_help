@@ -75,7 +75,7 @@ export default function NavBar() {
                         <CustomButton>
                         <Link to="/getstarted">Get Started</Link>
                         </CustomButton>
-                        
+
                         <Link to="/dashboard">
                         <StyledBadge
                             overlap="circular"

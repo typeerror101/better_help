@@ -1,10 +1,10 @@
 import Buisness from './links/Buisness';
-import './styles/global.css'
-import "./styles/styles.css";
 import Home from './links/Home';
 import Login from './links/Login';
+import Dashboard from './links/Dashboard';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
+import "./styles/styles.css";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
               <Route path='/contact'/>
               <Route path='/login' element={<Login/>}/>
               <Route path='/getstarted'/>
-              <Route path='/dashboard'/>
+              <Route path='/dashboard' element={<Dashboard/>}/>
           </Routes>
       </div>
       
