@@ -4,6 +4,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
+import HeroCarousel from "../Components/HeroCarousel.Component"
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { borderRadius } from "@mui/system";
 
