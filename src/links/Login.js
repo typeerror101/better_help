@@ -2,6 +2,8 @@ import { FcGoogle } from 'react-icons/fc';
 import { AiFillFacebook } from 'react-icons/ai';
 import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '../utils/firebase';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 
 export default function Login() {
     //sign in with google
@@ -16,6 +18,21 @@ export default function Login() {
     }
   
   return (
+    <>
+
+    <Box
+    sx={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      '& > :not(style)': {
+        m: 1,
+        width: 128,
+        height: 128,
+      },
+    }}
+  >
+  
+    <Paper elevation={0} />
     <div className="mx-auto shadow-xl mt-32 p-10 w-3/6 mx-7 bg-zinc-50 text-gray-700 rounded-lg">
       <h2 className='text-3xl font-medium'>Join Today!</h2>
       <div className='py-4'>
@@ -33,5 +50,20 @@ export default function Login() {
         </button>
       </div> 
     </div>
+  </Box>
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    </>
   )
 }
