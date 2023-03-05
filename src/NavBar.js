@@ -2,12 +2,17 @@ import { Link, useMatch, useResolvedPath} from "react-router-dom"
 import { styled } from '@mui/material/styles';
 import { Button } from "@mui/material"
 import { color } from "@mui/system"
+import {useAuthState} from 'react-firebase-hooks/auth';
+import { auth } from './utils/firebase';
+import { AltRoute } from "@mui/icons-material";
 
 const CustomButton = styled(Button)({
     color: '#EDF1D6'
 });
 
 export default function NavBar() {
+    const [user, loading] = useAuthState(auth);
+
     return(
         <div>
             <nav className="nav">
@@ -23,13 +28,27 @@ export default function NavBar() {
                     
                 </ul>
                 <ul>
-                    <CustomButton variant="contained" sx={{margin:1}}  color="success" size="small">
+                    {!user && (
+                        <>
+                        <CustomButton variant="contained" sx={{margin:1}}  color="success" size="small">
                         <Link to="/login">Login</Link>
-                    </CustomButton>
-                    <CustomButton  >
+                        </CustomButton>
+                        <CustomButton>
                         <Link to="/getstarted">Get Started</Link>
-                    </CustomButton>
-                    
+                        </CustomButton>
+                    </> 
+                    )}
+                    {user && (
+                        <>
+                        <Link to="/dashboard">
+                            <img src={user.photoURL} alt=""/>
+                        </Link>
+                        <CustomButton>
+                        <Link to="/getstarted">Get Started</Link>
+                        </CustomButton>
+                        </>
+                    )}
+                   
                 </ul>
             </nav>
         </div>

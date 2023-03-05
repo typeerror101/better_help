@@ -98,7 +98,7 @@ export default function Home(){
 
       <div className="QuoteBlock">
         
-        <p> {Quote1[0].text} </p>
+        {/* <p> {Quote1[0].text} </p> */}
       </div>
       </>
     )
