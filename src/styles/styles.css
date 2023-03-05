@@ -27,6 +27,7 @@ body{
 
 .nav{
     background-color: #40513B;
+    
     color: #EDF1D6;
     display: flex;
     justify-content: space-between;
@@ -71,3 +72,8 @@ body{
     
 }
 
+img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
+    height: 350px;
+    width: 350px;
+    object-fit: fill;
+}

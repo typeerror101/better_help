@@ -1,11 +1,10 @@
 import Buisness from './links/Buisness';
 import './styles/global.css'
+import "./styles/styles.css";
 import Home from './links/Home';
 import Login from './links/Login';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
-
-
 
 function App() {
   return (
