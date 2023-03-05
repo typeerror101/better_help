@@ -16,7 +16,9 @@ body{
     color: #242d21;
     margin-bottom: 3rem;
     margin-top: 1.5rem;
-    font-size: 1.3rem;
+    font-size: 2rem;
+    font-weight: bold;
+
 }
 .Cards{
     display: flex;
@@ -73,7 +75,7 @@ body{
 }
 
 img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
-    height: 350px;
-    width: 350px;
+    height: 390px;
+    width: 325px;
     object-fit: fill;
 }

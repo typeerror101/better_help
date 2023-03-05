@@ -24,23 +24,23 @@ export default function Home(){
             setQuote1(getQuote.data);
         };
         requestQuote();
-    },[]);
+    },[]);  
 
     return(
         <>
-        <div className="mainText">
+        <div className="mainText">  
             <h1>You deserve to be happy.</h1>
             <h2>What type of therapy are you looking for?</h2>
         </div>
         <div className='Cards'>
                 <div>
-            <Card sx={{ maxWidth: 400, maxHeight: 450, borderRadius: 3 }} >
+            <Card sx={{ maxWidth: 400, maxHeight: 500, borderRadius: 3 }} >
             <CardActionArea>
                     <CardMedia 
                     component="img"
                     height="235px"
                     width= "266px"
-                    image= "/images/individual.jpg"
+                    image= "/images/individual2.jpg"
                     alt="Individial_img"
                 />
                 <CardContent>
@@ -55,12 +55,12 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight: 450, borderRadius: 3 }} >
+            <Card sx={{ maxWidth: 400,maxHeight: 500, borderRadius: 3 }} >
             <CardActionArea>
                 <CardMedia
                 component="img"
                 height="410"
-                image="/images/couple.jpg"
+                image="/images/couples.jpg"
                 alt="green iguana"
                 />
                 <CardContent>
@@ -75,12 +75,12 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight:450, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 400,maxHeight:500, borderRadius: 3 }}>
             <CardActionArea>
                 <CardMedia
                 component="img"
                 height="410"
-                image="/images/teenager.jpg"
+                image="/images/teenager4.jpg"
                 alt="green iguana"
                 />
                 <CardContent>
@@ -96,10 +96,7 @@ export default function Home(){
             </div>
       </div>
 
-      <div className="QuoteBlock">
-        
-        {/* <p> {Quote1[0].text} </p> */}
-      </div>
+      
       </>
     )
 }
