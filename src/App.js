@@ -1,4 +1,5 @@
 import Buisness from './links/Buisness';
+import './styles/global.css'
 import Home from './links/Home';
 import Login from './links/Login';
 import NavBar from './NavBar';

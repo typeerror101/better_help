@@ -15,11 +15,11 @@ export default function Home(){
             <h1>You deserve to be happy.</h1>
             <h2>What type of therapy are you looking for?</h2>
         </div>
-    <div className='Cards'>
+        <div className='Cards'>
             <div>
-            <Card sx={{ maxWidth: 345, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 345, borderRadius: 3 }} >
             <CardActionArea>
-                <CardMedia
+                <CardMedia 
                 component="img"
                 height="410"
                 width= "345"
@@ -38,7 +38,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 345, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 345, borderRadius: 3 }} >
             <CardActionArea>
                 <CardMedia
                 component="img"

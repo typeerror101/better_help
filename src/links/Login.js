@@ -2,6 +2,8 @@ import { FcGoogle } from 'react-icons/fc';
 import { AiFillFacebook } from 'react-icons/ai';
 import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '../utils/firebase';
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 
 export default function Login() {
     //sign in with google
