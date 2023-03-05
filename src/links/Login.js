@@ -18,21 +18,6 @@ export default function Login() {
     }
   
   return (
-    <>
-
-    <Box
-    sx={{
-      display: 'flex',
-      flexWrap: 'wrap',
-      '& > :not(style)': {
-        m: 1,
-        width: 128,
-        height: 128,
-      },
-    }}
-  >
-  
-    <Paper elevation={0} />
     <div className="mx-auto shadow-xl mt-32 p-10 w-3/6 mx-7 bg-zinc-50 text-gray-700 rounded-lg">
       <h2 className='text-3xl font-medium'>Join Today!</h2>
       <div className='py-4'>
@@ -50,20 +35,5 @@ export default function Login() {
         </button>
       </div> 
     </div>
-  </Box>
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    </>
   )
 }
