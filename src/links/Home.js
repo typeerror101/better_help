@@ -1,14 +1,31 @@
-import React from "react"
+import React from "react";
+import axios from 'axios';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
-import HeroCarousel from "../Components/HeroCarousel.Component"
+import { useEffect, useState } from "react";
+
+
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { borderRadius } from "@mui/system";
+import { convertLength } from "@mui/material/styles/cssUtils";
+
+
 
 export default function Home(){
+
+    const [Quote1, setQuote1] = useState([]);
+
+    useEffect(() => {
+        const requestQuote = async() =>{
+            const getQuote = await axios.get('https://type.fit/api/quotes');
+            setQuote1(getQuote.data);
+        };
+        requestQuote();
+    },[]);
+
     return(
         <>
         <div className="mainText">
@@ -16,15 +33,15 @@ export default function Home(){
             <h2>What type of therapy are you looking for?</h2>
         </div>
         <div className='Cards'>
-            <div>
-            <Card sx={{ maxWidth: 345, borderRadius: 3 }} >
+                <div>
+            <Card sx={{ maxWidth: 400, maxHeight: 450, borderRadius: 3 }} >
             <CardActionArea>
-                <CardMedia 
-                component="img"
-                height="410"
-                width= "345"
-                image= "/images/individual.jpg"
-                alt="Individial_img"
+                    <CardMedia 
+                    component="img"
+                    height="235px"
+                    width= "266px"
+                    image= "/images/individual.jpg"
+                    alt="Individial_img"
                 />
                 <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
@@ -38,7 +55,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 345, borderRadius: 3 }} >
+            <Card sx={{ maxWidth: 400,maxHeight: 450, borderRadius: 3 }} >
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -58,7 +75,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 345, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 400,maxHeight:450, borderRadius: 3 }}>
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -77,6 +94,11 @@ export default function Home(){
             </CardActionArea>
             </Card>
             </div>
+      </div>
+
+      <div className="QuoteBlock">
+        
+        <p> {Quote1[0].text} </p>
       </div>
       </>
     )
