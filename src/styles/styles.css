@@ -1,3 +1,8 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
     box-sizing: border-box;
 }
@@ -15,6 +20,7 @@ body{
     color: #242d21;
     margin-bottom: 3rem;
     margin-top: 1.5rem;
+    font-size: 1.3rem;
 }
 .Cards{
     display: flex;
@@ -30,7 +36,7 @@ body{
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0rem 1rem;
 }
 
 .site-title{

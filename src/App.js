@@ -1,5 +1,6 @@
 import Buisness from './links/Buisness';
 import Home from './links/Home';
+import Login from './links/Login';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
 
@@ -19,7 +20,7 @@ function App() {
               <Route path='/reviews'/>
               <Route path='/therapistjobs'/>
               <Route path='/contact'/>
-              <Route path='/login'/>
+              <Route path='/login' element={<Login/>}/>
               <Route path='/getstarted'/>
           </Routes>
       </div>

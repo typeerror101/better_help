@@ -16,7 +16,7 @@ export default function Home(){
         </div>
     <div className='Cards'>
             <div>
-            <Card sx={{ Width: 345, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 345, borderRadius: 3 }}>
             <CardActionArea>
                 <CardMedia
                 component="img"
