@@ -17,12 +17,21 @@ body{
 
 .mainText{
     color: #242d21;
-    margin-bottom: 3rem;
-    margin-top: 1.5rem;
-    font-size: 2rem;
-    font-weight: bold;
-
+    margin-bottom: 2.6rem;
+    margin-top: 1.3rem;
+    font-size: 5rem;
+    /* font-weight: bold; */
+    font-family: 'Rampart One', cursive;
+    color: #dee3c3;
+    text-shadow: 1px 1px 2px rgb(121, 119, 119), 0 0 1em black, 0 0 0.2em black;
 }
+
+.mainText h2{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .Cards{
     display: flex;
     justify-content: center;
@@ -32,7 +41,9 @@ body{
 
 .nav{
     background-color: #40513B;
-    
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    font-weight: 700;
     color: #EDF1D6;
     display: flex;
     justify-content: space-between;
@@ -63,6 +74,17 @@ body{
 }
 
 
+.middle-nav-elements{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.05rem;
+}
+
+.right-nav-elements{
+    font-family: 'Caveat', cursive;
+    font-weight: 600;
+    font-size: larger;
+}
+
 .nav li.active{
     border-style: solid;
     margin: 0;
@@ -78,7 +100,7 @@ body{
 }
 
 img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
-    height: 390px;
+    height: 400px;
     width: 325px;
     object-fit: fill;
 }

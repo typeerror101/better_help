@@ -51,13 +51,13 @@ export default function NavBar() {
             <nav className="nav">
                 <Link to="/" className="site-title" >Better Help</Link>
                 <ul>
-                    <CustomLink to="/business">Business</CustomLink>
-                    <CustomLink to="/about">About</CustomLink>
-                    <CustomLink to="/advice">Advice</CustomLink>
-                    <CustomLink to="/faq">FAQ</CustomLink>
-                    <CustomLink to="/reviews">Reviews</CustomLink>
-                    <CustomLink to="/therapistjobs">Therapist Jobs</CustomLink>
-                    <CustomLink to="/contact">Contact</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/business">Business</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/advice">Advice</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/reviews">Reviews</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/contact">Contact</CustomLink>
                     
                 </ul>
                 <ul>
@@ -67,7 +67,7 @@ export default function NavBar() {
                         <Link to="/login">Login</Link>
                         </CustomButton>
                         <CustomButton>
-                        <Link to="/getstarted">Get Started</Link>
+                        <Link className="right-nav-elements" to="/getstarted">Get Started</Link>
                         </CustomButton>
                     </> 
                     )}
