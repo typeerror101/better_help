@@ -34,7 +34,7 @@ export default function Home(){
         </div>
         <div className='Cards'>
                 <div>
-            <Card sx={{ maxWidth: 400, maxHeight: 500, borderRadius: 3, fontFamily: 'Caveat' }} >
+            <Card sx={{ maxWidth: 400, maxHeight: 500, borderRadius: 8, fontFamily: 'Caveat' }} >
             <CardActionArea>
                     <CardMedia 
                     component="img"
@@ -55,7 +55,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight: 500, borderRadius: 3 }} >
+            <Card sx={{ maxWidth: 400,maxHeight: 500, borderRadius: 8 }} >
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -75,7 +75,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight:500, borderRadius: 3 }}>
+            <Card sx={{ maxWidth: 400,maxHeight:500, borderRadius: 8 }}>
             <CardActionArea>
                 <CardMedia
                 component="img"
