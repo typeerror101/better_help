@@ -9,6 +9,7 @@ export default function Dashboard() {
     const navigate = useNavigate();
 
     if(loading) return <h1>Loading...</h1>
+    // if(user) navigate("/")
     if(!user) navigate("/login");
   return (
     <div>

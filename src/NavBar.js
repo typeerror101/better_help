@@ -9,6 +9,7 @@ import { AltRoute } from "@mui/icons-material";
 import Badge from '@mui/material/Badge';
 import Stack from '@mui/material/Stack';
 
+
 const StyledBadge = styled(Badge)(({ theme }) => ({
     '& .MuiBadge-badge': {
       backgroundColor: '#44b700',
@@ -72,9 +73,9 @@ export default function NavBar() {
                     )}
                     {user && (
                         <>
-                        <CustomButton>
-                        <Link to="/getstarted">Get Started</Link>
-                        </CustomButton>
+                        <Link>
+                            {user.displayName}
+                        </Link>
 
                         <Link to="/dashboard">
                         <StyledBadge

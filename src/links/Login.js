@@ -2,8 +2,8 @@ import { FcGoogle } from 'react-icons/fc';
 import { AiFillFacebook } from 'react-icons/ai';
 import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
 import { auth } from '../utils/firebase';
-import { useNavigate } from "react-router-dom";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from "react-router-dom";
 
 
 export default function Login() {
@@ -17,6 +17,7 @@ export default function Login() {
       try {
         const result = await signInWithPopup(auth, googleProvider)
         console.log(result.user);
+        navigate("/"); 
       } catch (error) {
         console.log(error);
       }

@@ -7,6 +7,10 @@ import { Route, Routes } from "react-router-dom";
 import "./styles/styles.css";
 
 function App() {
+
+  
+  // if(user) navigate("/");
+
   return (
     <>
       <NavBar/>
