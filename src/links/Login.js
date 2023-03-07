@@ -1,6 +1,6 @@
 import { FcGoogle } from 'react-icons/fc';
 import { AiFillFacebook } from 'react-icons/ai';
-import {GoogleAuthProvider, signInWithPopup} from 'firebase/auth';
+import {GoogleAuthProvider, signInWithPopup, FacebookAuthProvider, updateProfile} from 'firebase/auth';
 import { auth } from '../utils/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from "react-router-dom";
@@ -30,7 +30,22 @@ export default function Login() {
         console.log(error);
       }
     }
-    
+   //sign in with facebook
+   const fbProvider = new FacebookAuthProvider();
+   const FacebookLogin = async () =>{
+    try {
+      const result = await signInWithPopup(auth, fbProvider);
+      const credential =  await FacebookAuthProvider.credentialFromResult(result);
+      const token = credential.accessToken;
+      let photoUrl = result.user.photoURL + '?height=500&access_token=' + token;
+      await updateProfile(auth.currentUser, {photoURL: photoUrl});
+
+      console.log(result);
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }  
+   };
   
   return (
     <div className="mx-auto shadow-xl mt-32 p-10 w-4/6 bg-zinc-50 text-gray-700 rounded-lg">
@@ -45,7 +60,7 @@ export default function Login() {
         >
         <FcGoogle className='text-3xl'/>Sign in with Google
         </button>
-        <button className='text-white bg-gray-700 p-4 w-full font-medium rounded-lg flex align-middle gap-8'>
+        <button onClick={FacebookLogin} className='text-white bg-gray-700 p-4 w-full font-medium rounded-lg flex align-middle gap-8'>
         <AiFillFacebook className='text-3xl text-blue-400'/>Sign in with Facebook
         </button>
       </div> 
