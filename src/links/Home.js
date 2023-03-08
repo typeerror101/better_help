@@ -4,13 +4,9 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
-import {shadows, borders } from '@mui/system';
-import { useEffect, useState } from "react";
-import { Button, CardActionArea, CardActions } from '@mui/material';
-import { borderRadius } from "@mui/system";
-import { convertLength } from "@mui/material/styles/cssUtils";
+import { CardActionArea } from '@mui/material';
 import SimpleSlider from "../Components/carousel";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
 
@@ -97,8 +93,10 @@ export default function Home(){
             </CardActionArea>
             </Card>
             </div>
+            
       </div>
-      <div className="div-quote m-20 p-20 mx-auto justify-center">
+      <KeyboardArrowDownIcon sx={{color: "white"}}/>
+      <div className="div-quote m-20 p-20 mx-4 justify-center rounded-3xl">
             <SimpleSlider/>
       </div>
       </>

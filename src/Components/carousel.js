@@ -15,9 +15,9 @@ export default class SimpleSlider extends Component {
       fade: true,
       dot: false,
       autoplaySpeed: 2000,
-      arrows: false,
+      arrows: true,
       cssEase: 'ease-in-out',
-      touchThreshold: 100
+      touchThreshold: 100,
     };
     return (
       <div className="text-white">  
