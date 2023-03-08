@@ -49,7 +49,7 @@ export default function NavBar() {
     return(
         <div>
             <nav className="nav">
-                <Link to="/" className="site-title" >Better Help</Link>
+                <Link to="/" className="site-title" >Better Health</Link>
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>

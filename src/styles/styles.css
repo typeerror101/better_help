@@ -8,22 +8,24 @@
 
 body{
     margin: 0;
-    background-color: #609966;
+    background-color: #E9F8F9;
+    backdrop-filter: blur(5px);
 }
+
+
 .components{
     margin: 0rem;
     text-align: center;
 }
 
 .mainText{
-    color: #242d21;
+    color: #C0EEF2;
     margin-bottom: 2.6rem;
     margin-top: 1.3rem;
     font-size: 5rem;
     /* font-weight: bold; */
     font-family: 'Rampart One', cursive;
-    color: #dee3c3;
-    text-shadow: 1px 1px 2px rgb(121, 119, 119), 0 0 1em black, 0 0 0.2em black;
+    text-shadow: 1px 1px 2px black, 0 0 1em #537FE7, 0 0 0.2em #537FE7;
 }
 
 .mainText h2{
@@ -40,16 +42,18 @@ body{
 
 
 .nav{
-    background-color: #40513B;
+    background-color: #E9F8F9;
     font-family: 'Caveat', cursive;
     font-size: large;
     font-weight: 700;
-    color: #EDF1D6;
+    color: #181823;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
     padding: 0rem 1rem;
+    box-shadow: 0 8px 6px -6px #537FE7;
+
 }
 
 .site-title{
@@ -89,7 +93,7 @@ body{
     border-style: solid;
     margin: 0;
     border-width: 0 0 6px 0;
-    border-bottom-color: #EDF1D6;
+    border-bottom-color: #537FE7;
     border-bottom-width: 6px;
     border-radius: 2px;
 }

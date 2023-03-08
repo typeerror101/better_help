@@ -5,9 +5,8 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import PlayCircleFilledIcon from '@mui/icons-material/PlayCircleFilled';
+import {shadows, borders } from '@mui/system';
 import { useEffect, useState } from "react";
-
-
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { borderRadius } from "@mui/system";
 import { convertLength } from "@mui/material/styles/cssUtils";
@@ -34,7 +33,7 @@ export default function Home(){
         </div>
         <div className='Cards'>
                 <div>
-            <Card sx={{ maxWidth: 400, maxHeight: 500, borderRadius: 8, fontFamily: 'Caveat' }} >
+            <Card sx={{ maxWidth: 400, maxHeight: 500, borderRadius: 8, fontFamily: 'Caveat', boxShadow: 3, border: 5, borderColor: '#fff' }} >
             <CardActionArea>
                     <CardMedia 
                     component="img"
@@ -44,10 +43,10 @@ export default function Home(){
                     alt="Individial_img"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Individual <PlayCircleFilledIcon/>
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Individual 
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
                     For myself
                 </Typography>
                 </CardContent>
@@ -55,7 +54,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight: 500, borderRadius: 8 }} >
+            <Card sx={{ maxWidth: 400,maxHeight: 500, borderRadius: 8, boxShadow: 3, border: 5, borderColor: '#fff' }} >
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -64,10 +63,10 @@ export default function Home(){
                 alt="green iguana"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Couple <PlayCircleFilledIcon/>
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Couple 
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
                    For me and my partner
                 </Typography>
                 </CardContent>
@@ -75,7 +74,7 @@ export default function Home(){
             </Card>
             </div>
             <div>
-            <Card sx={{ maxWidth: 400,maxHeight:500, borderRadius: 8 }}>
+            <Card sx={{ maxWidth: 400,maxHeight:500, borderRadius: 8, boxShadow: 3, border: 5, borderColor: '#fff' }}>
             <CardActionArea>
                 <CardMedia
                 component="img"
@@ -84,10 +83,10 @@ export default function Home(){
                 alt="green iguana"
                 />
                 <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
-                    Teenager <PlayCircleFilledIcon/>
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Teenager 
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
                     For my child
                 </Typography>
                 </CardContent>
