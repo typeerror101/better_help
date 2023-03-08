@@ -57,17 +57,17 @@ export default function NavBar() {
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/reviews">Reviews</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/support">Support</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/contact">Contact</CustomLink>
                     
                 </ul>
                 <ul>
                     {!user && (
                         <>
-                        <CustomButton sx={{margin:1, color: '#fff'}} color="secondary" variant="contained"  size="small">
+                        <CustomButton sx={{margin:1, color: '#fff'}}  variant="contained"   color="success" size="small">
                         <Link to="/login">Login</Link>
                         </CustomButton>
                         <CustomButton>
-                        <Link style={{color: '#fff'}} className="right-nav-elements"  to="">Get Started</Link>
+                        <Link style={{color: '#181823'}} className="right-nav-elements"  to="">Get Started</Link>
                         </CustomButton>
                     </> 
                     )}
@@ -91,7 +91,6 @@ export default function NavBar() {
                    
                 </ul>
             </nav>
-      
       </div>
     )
 }
