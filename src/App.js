@@ -1,4 +1,4 @@
-import Buisness from './links/Buisness';
+import Blog from './links/Blog';
 import Home from './links/Home';
 import Login from './links/Login';
 import Dashboard from './links/Dashboard';
@@ -17,7 +17,7 @@ function App() {
       <div className='components'>
           <Routes>
               <Route path='/' element={<Home/>}/>
-              <Route path='/business' element={<Buisness/>}/>
+              <Route path='/blog' element={<Blog/>}/>
               <Route path='/about'/>
               <Route path='/advice'/>
               <Route path='/faq'/>

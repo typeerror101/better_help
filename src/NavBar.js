@@ -51,7 +51,7 @@ export default function NavBar() {
             <nav className="nav">
                 <Link to="/" className="site-title" >Better Help</Link>
                 <ul>
-                    <CustomLink className="middle-nav-elements" to="/business">Business</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/advice">Advice</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
