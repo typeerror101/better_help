@@ -5,7 +5,6 @@ import Dashboard from './links/Dashboard';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
 import "./styles/styles.css";
-import SimpleSlider from './Components/carousel';
 
 function App() {
 
@@ -15,7 +14,6 @@ function App() {
   return (
     <>
       <NavBar/>
-      <SimpleSlider/>
       <div className='components'>
           <Routes>
               <Route path='/' element={<Home/>}/>
@@ -25,7 +23,7 @@ function App() {
               <Route path='/faq'/>
               <Route path='/reviews'/>
               <Route path='/therapistjobs'/>
-              <Route path='/support' element={<Dashboard/>}/>
+              <Route path='/contact'/>
               <Route path='/login' element={<Login/>}/>
               <Route path='/getstarted'/>
               <Route path='/dashboard' element={<Dashboard/>}/>

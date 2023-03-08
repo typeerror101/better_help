@@ -98,10 +98,9 @@ export default function Home(){
             </Card>
             </div>
       </div>
-      <div className="bg-slate-400 p-5 mt-7 justify-center">
+      <div className="div-quote m-20 p-20 mx-auto justify-center">
             <SimpleSlider/>
       </div>
-      
       </>
     )
 }
