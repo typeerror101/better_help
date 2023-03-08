@@ -10,20 +10,24 @@ import { useEffect, useState } from "react";
 import { Button, CardActionArea, CardActions } from '@mui/material';
 import { borderRadius } from "@mui/system";
 import { convertLength } from "@mui/material/styles/cssUtils";
+import SimpleSlider from "../Components/carousel";
 
 
 
 export default function Home(){
+    // Quotes api code
 
-    const [Quote1, setQuote1] = useState([]);
+    // const [Quote1, setQuote1] = useState([]);
+    
+    // useEffect(() => {
+    //     const requestQuote = async() =>{
+    //         const getQuote = await axios.get("https://type.fit/api/quotes");
+    //         setQuote1(getQuote.data);
+    //     };
+        
+    //     requestQuote();
+    // },[]);  
 
-    useEffect(() => {
-        const requestQuote = async() =>{
-            const getQuote = await axios.get('https://type.fit/api/quotes');
-            setQuote1(getQuote.data);
-        };
-        requestQuote();
-    },[]);  
 
     return(
         <>
@@ -94,7 +98,9 @@ export default function Home(){
             </Card>
             </div>
       </div>
-
+      <div className="bg-slate-400 p-5 mt-7 justify-center">
+            <SimpleSlider/>
+      </div>
       
       </>
     )
