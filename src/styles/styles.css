@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    background-color: #635985;
+    background-color: #E9F8F9;
     backdrop-filter: blur(5px);
 }
 
@@ -19,13 +19,13 @@ body{
 }
 
 .mainText{
-    color: #ffffff;
-    margin-bottom: 2rem;
+    color: #424141;
+    margin-bottom: 2.6rem;
     margin-top: 1.3rem;
-    font-size: 4.5rem;
+    font-size: 5rem;
     /* font-weight: bold; */
-    font-family: 'Poppins', sans-serif;
-    text-shadow: 1px 1px 2px black, 0 0 1em #393053, 0 0 0.2em #393053;
+    font-family: 'Rampart One', cursive;
+    text-shadow: 1px 1px 2px black, 0 0 1em #537FE7, 0 0 0.2em #537FE7;
 }
 
 .mainText h2{
@@ -42,17 +42,17 @@ body{
 
 
 .nav{
-    background-color: #393053;
+    background-color: #E9F8F9;
     font-family: 'Caveat', cursive;
     font-size: large;
     font-weight: 700;
-    color: #ffffff;
+    color: #181823;
     display: flex;
     justify-content: space-between;
     align-items: stretch;
     gap: 2rem;
     padding: 0rem 1rem;
-    box-shadow: 20px 8px  20px -6px #443C68;
+    box-shadow: 20px 8px  50px -6px #537FE7;
     
 }
 
@@ -84,7 +84,7 @@ body{
 }
 
 .right-nav-elements{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Caveat', cursive;
     font-weight: 600;
     font-size: larger;
 }
@@ -93,7 +93,7 @@ body{
     border-style: solid;
     margin: 0;
     border-width: 0 0 6px 0;
-    border-bottom-color: #ffffff;
+    border-bottom-color: #537FE7;
     border-bottom-width: 6px;
     border-radius: 2px;
 }
@@ -107,13 +107,10 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
     height: 400px;
     width: 325px;
     object-fit: fill;
-    shadow: 20px 8px  20px -6px #443C68;
 }
-
 
 /* .topContainer{
     display: flex;
     flex: auto;
 
 } */
-
