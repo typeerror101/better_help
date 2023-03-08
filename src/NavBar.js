@@ -67,7 +67,7 @@ export default function NavBar() {
                         <Link to="/login">Login</Link>
                         </CustomButton>
                         <CustomButton>
-                        <Link className="right-nav-elements" to="/getstarted">Get Started</Link>
+                        <Link style={{color: '#181823'}} className="right-nav-elements"  to="">Get Started</Link>
                         </CustomButton>
                     </> 
                     )}
