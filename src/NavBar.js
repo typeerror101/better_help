@@ -63,7 +63,7 @@ export default function NavBar() {
                 <ul>
                     {!user && (
                         <>
-                        <CustomButton variant="contained" sx={{margin:1}}  color="success" size="small">
+                        <CustomButton sx={{margin:1, color: '#fff'}}  variant="contained"   color="success" size="small">
                         <Link to="/login">Login</Link>
                         </CustomButton>
                         <CustomButton>
@@ -91,7 +91,7 @@ export default function NavBar() {
                    
                 </ul>
             </nav>
-        </div>
+      </div>
     )
 }
 
