@@ -117,3 +117,165 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 
 } */
 
+/* blog css */
+
+body{
+  font-family: 'Montserrat';
+  text-align:center;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat';
+  font-weight: 800;
+}
+
+p{
+  color: #8f8f8f;
+}
+
+.big-heading{
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.container-fluid{
+  padding:7% 15%;
+}
+.colored-section{
+  color: #fff;
+  background-color: #ff4c68;
+}
+.white-section{
+  background-color: #fff;
+}
+/* nav bar */
+
+.navbar{
+  padding-bottom: 2.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-family: "Montserrat";
+  font-weight: 200;
+}
+/* Button */
+.download-btn{
+  margin: 5% 3% 5% 0;
+}
+
+/* image */
+.title-image{
+   width:20%;
+   transform: rotate(25deg);
+   position :absolute;
+   right:22%;
+}
+/* title */
+
+#title .container-fluid{
+  padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+@media (max-width: 1176px){
+  #title{
+    text-align: center;
+  }
+  .title-image{
+     width:70%;
+    position: static;
+    transform: rotate(0deg);
+  }
+
+
+}
+/* features section */
+#features{
+    position :relative;
+    z-index: 1;
+}
+
+.features-heading{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.items{
+  padding: 5%;
+}
+.f_icons{
+  font-size: 4rem;
+  color: #ef8172;
+  padding-bottom: 7%;
+}
+.f_icons:hover {
+  color: #ff4c68;
+}
+
+
+/* testimonials section */
+#testimonials{
+
+  background-color: #ef8172;
+
+}
+.textimonail-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.testimonial-image{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press{
+  background-color: #ef8172;
+}
+.press-img{
+  width: 15%;
+  margin:20px 20px 50px;
+}
+.carousel-item{
+  padding: 7% 15%;
+}
+
+/* pricing */
+
+#pricing{
+  padding:6% 15%;
+}
+.card-heading{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.section-heading{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.pricing-text{
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.column-card{
+  padding:3% 2%;
+}
+
+
+
+/* cta */
+
+
+/* footer */
+
+.f2_icons{
+  margin: 12px;
+}
