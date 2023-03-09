@@ -14,7 +14,7 @@ export default class SimpleSlider extends Component {
       autoplay: true,
       fade: true,
       dot: false,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 4000,
       arrows: true,
       cssEase: 'ease-in-out',
       touchThreshold: 100,

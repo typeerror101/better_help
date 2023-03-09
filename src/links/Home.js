@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
 import SimpleSlider from "../Components/carousel";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import Footer from "../Components/footer";
 
 
 
@@ -99,6 +100,12 @@ export default function Home(){
       <div className="div-quote m-20 p-20 mx-4 justify-center rounded-3xl">
             <SimpleSlider/>
       </div>
+
+        {/* footer */}
+
+        <div>
+            <Footer/>
+        </div>
       </>
     )
 }
