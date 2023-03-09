@@ -100,12 +100,16 @@ body{
     border-width: 0 0 6px 0;
     border-bottom-color: #ffffff;
     border-bottom-width: 6px;
-    border-radius: 2px;
+    /* border-radius: 2px;
+    border-top-right-radius: 2px; */
 }
 
 .nav li:hover{
-    text-decoration: underline;
-    
+    border-style: solid;
+    margin: 0;
+    border-width: 0 0 6px 0;
+    border-bottom-color: #ffffff;
+    border-bottom-width: 6px;
 }
 
 img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
