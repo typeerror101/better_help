@@ -8,7 +8,7 @@
 
 body{
     margin: 0;
-    background-color: #635985;
+    background-color: #efedf0;
     backdrop-filter: blur(5px);
 }
 
@@ -18,20 +18,25 @@ body{
     text-align: center;
 }
 
-.mainText{
+.mainText {
     color: #ffffff;
     margin-bottom: 2rem;
     margin-top: 1.3rem;
-    font-size: 4.5rem;
-    /* font-weight: bold; */
+    font-size: 4.7rem;
+    font-weight: bold;
     font-family: 'Poppins', sans-serif;
-    text-shadow: 1px 1px 2px black, 0 0 1em #393053, 0 0 0.2em #393053;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px #F0EEED, 0 0 3em #393053, 0 0 0.2em #393053;
 }
 
 .mainText h2{
     margin-top: 1rem;
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #420516;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* text-decoration: underline; */
+    text-shadow: 1px 1px 2px #F0EEED, 0 0 0em #7D1935, 0 0 0em #7D1935;
 }
 
 .Cards{
@@ -42,7 +47,7 @@ body{
 
 
 .nav{
-    background-color: #393053;
+    background-color: #7D1935;
     font-family: 'Caveat', cursive;
     font-size: large;
     font-weight: 700;
@@ -52,7 +57,7 @@ body{
     align-items: stretch;
     gap: 2rem;
     padding: 0rem 1rem;
-    box-shadow: 20px 8px  20px -6px #443C68;
+    box-shadow: 20px 7px  20px -6px #7D1935;
     
 }
 
@@ -107,11 +112,11 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
     height: 400px;
     width: 325px;
     object-fit: fill;
-    shadow: 20px 8px  20px -6px #443C68;
+    box-shadow: 250px 100px  450px -6px #7D1935;
 }
 
 .div-quote{
-    background-color: #443C68;
+    background-color: #B42B51;
     box-shadow: 20px 8px  20px -6px #443C68;
 }
 
@@ -121,7 +126,14 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 
 } */
 
+.carousel{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
 .footer{
-    background-color: #534b6f;
-    padding: 20px;
+    background-color: #7D1935;
+    padding: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-style: none;
 }

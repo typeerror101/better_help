@@ -20,7 +20,7 @@ export default class SimpleSlider extends Component {
       touchThreshold: 100,
     };
     return (
-      <div className="text-white">  
+      <div className="text-white carousel">  
         <Slider {...settings}>
           <div>
             <h3 className="text-3xl">{quotes[ran].text}</h3>

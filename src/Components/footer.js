@@ -7,13 +7,13 @@ import EmailIcon from '@mui/icons-material/Email';
 export default function footer() {
   return (
     <div className='footer'>
-        <div className='flex justify-center gap-10 my-10 text-white h-10 '>
+        <div className='flex justify-center gap-10 my-5 text-white h-10 '>
             <TwitterIcon/>
             <FacebookIcon/>
             <InstagramIcon/>
             <EmailIcon/>
         </div>
-        <div className='my-10 text-white text-base'> 
+        <div className='mb-1 text-white text-base'> 
             <p>© Copyright 2023 BetterHealth</p>
             <p>Made with ❤ for you.</p>
         </div>
