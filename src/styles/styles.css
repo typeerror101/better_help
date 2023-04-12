@@ -9,33 +9,35 @@
 body{
     margin: 0;
     background-color: #efedf0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+    background-image: url('../../public/images/cloudBed.jpg');
+    
 }
 
 
 .components{
     margin: 0rem;
     text-align: center;
+    
 }
 
 .mainText {
     color: #ffffff;
     margin-bottom: 2rem;
-    margin-top: 1.3rem;
+    margin-top: .8rem;
     font-size: 4.7rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
-    text-shadow: 1px 1px 2px #F0EEED, 0 0 3em #393053, 0 0 0.2em #393053;
+    text-shadow: 1px 1px 1px #F0EEED, 0 0 3em #858193, 0 0 0.2em #888398;
 }
 
 .mainText h2{
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 0rem;
+    font-size: 1.3rem;
     color: #420516;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    /* text-decoration: underline; */
     text-shadow: 1px 1px 2px #F0EEED, 0 0 0em #7D1935, 0 0 0em #7D1935;
 }
 
@@ -47,7 +49,7 @@ body{
 
 
 .nav{
-    background-color: #7D1935;
+    background-color: #8b2744;
     font-family: 'Caveat', cursive;
     font-size: large;
     font-weight: 700;
@@ -57,7 +59,9 @@ body{
     align-items: stretch;
     gap: 2rem;
     padding: 0rem 1rem;
-    box-shadow: 20px 7px  20px -6px #7D1935;
+    margin-bottom: 0px;
+
+    /* box-shadow: 20px 7px  20px -6px #7D1935; */
     
 }
 
@@ -121,7 +125,7 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 
 .div-quote{
     background-color: #B42B51;
-    box-shadow: 20px 8px  20px -6px #443C68;
+    box-shadow: 2px 1px  9px 0px #666464;
 }
 
 /* .topContainer{
@@ -140,4 +144,29 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
     padding: 40px;
     font-family: 'Roboto', sans-serif;
     font-style: none;
+}
+
+.Mainbox{
+    font-family: 'Rubik' , sans-serif;
+    margin: 10px auto;
+    width: 100%;
+    background-image: url('../../public/images/background-support.jpg');
+    backdrop-filter: blur(3px);
+    background-size: contain;
+}
+
+.greetText h1{
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 30px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff;
+}
+
+.greetText h2{
+    font-weight: 400;
+    text-shadow: 1px 1px 30px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff;
+}
+
+.secondContainer{
+    margin: 0;
+    
 }
