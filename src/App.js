@@ -2,6 +2,7 @@ import Blog from './links/Blog';
 import Home from './links/Home';
 import Login from './links/Login';
 import Dashboard from './links/Dashboard';
+import Parent from './links/Parent';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
 import "./styles/styles.css";
@@ -21,7 +22,7 @@ function App() {
               <Route path='/about'/>
               <Route path='/advice'/>
               <Route path='/faq'/>
-              <Route path='/reviews'/>
+              <Route path='/parent' element={<Parent/>}/>
               <Route path='/therapistjobs'/>
               <Route path='/support' element={<Dashboard/>}/>
               <Route path='/login' element={<Login/>}/>

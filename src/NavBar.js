@@ -55,7 +55,7 @@ export default function NavBar() {
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/advice">Advice</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/reviews">Reviews</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/parent">Parent</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/support">Support</CustomLink>
                     
