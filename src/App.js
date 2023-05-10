@@ -2,9 +2,9 @@ import Blog from './links/Blog';
 import Home from './links/Home';
 import Login from './links/Login';
 import Dashboard from './links/Dashboard';
+import DepressionTest from './links/DepressionTest';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
-import "./styles/styles.css";
 
 function App() {
 
@@ -19,7 +19,7 @@ function App() {
               <Route path='/' element={<Home/>}/>
               <Route path='/blog' element={<Blog/>}/>
               <Route path='/about'/>
-              <Route path='/advice'/>
+              <Route path='/depressionTest' element={<DepressionTest/>}/>
               <Route path='/faq'/>
               <Route path='/reviews'/>
               <Route path='/therapistjobs'/>

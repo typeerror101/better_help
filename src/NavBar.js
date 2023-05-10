@@ -49,11 +49,11 @@ export default function NavBar() {
     return(
         <div>
             <nav className="nav">
-                <Link to="/" className="site-title" >Better Health</Link>
+                <Link to="/" className="site-title" >Better Help</Link>
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/advice">Advice</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/depressionTest">DepressionTest</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/reviews">Reviews</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
