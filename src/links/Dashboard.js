@@ -18,7 +18,7 @@ export default function Dashboard() {
     if(!user) navigate("/login");
   return (
     <div className="Mainbox container m-5 p-3 bg-slate-200 rounded-3xl">
-      <div className='w-auto flex flex-wrap px-5 py-5 m-7 justify-between' >
+      <div className='w-auto flex flex-wrap px-5 py-5 m-7 justify-between' >  
         <div className=" m-3 p-2 rounded-xl" > 
           <h1 className>Good Morning, {user.displayName}!</h1>
           <h2>Welcome to your Dashboard {user.displayName}</h2>

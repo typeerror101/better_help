@@ -5,7 +5,6 @@ import Dashboard from './links/Dashboard';
 import Parent from './links/Parent';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
-import "./styles/styles.css";
 
 function App() {
 
