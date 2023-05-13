@@ -144,7 +144,7 @@ export default function DepressionTest() {
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
 				    <div className='score-section'>You scored {Score} out of 32</div>
-					<div className='score-section'>Consult your Therapist now!</div>
+					<div className='score-section score-button'>Consult your Therapist now!</div>
 			        </div>
 				</div>
 			) : (
