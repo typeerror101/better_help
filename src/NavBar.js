@@ -49,11 +49,11 @@ export default function NavBar() {
     return(
         <div>
             <nav className="nav">
-                <Link to="/" className="site-title" >Better Health</Link>
+                <Link to="/" className="site-title" >Better Help</Link>
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/advice">Advice</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/depressionTest">DepressionTest</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/parent">Parent</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
@@ -63,11 +63,8 @@ export default function NavBar() {
                 <ul>
                     {!user && (
                         <>
-                        <CustomButton sx={{margin:1, color: '#fff'}} color="secondary" variant="contained"  size="small">
+                        <CustomButton sx={{margin:2, color: '#fff',fontSize:14,fontWeight: 700}} size="small">
                         <Link to="/login">Login</Link>
-                        </CustomButton>
-                        <CustomButton>
-                        <Link style={{color: '#fff'}} className="right-nav-elements"  to="">Get Started</Link>
                         </CustomButton>
                     </> 
                     )}

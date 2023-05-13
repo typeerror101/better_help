@@ -96,8 +96,8 @@ export default function Home(){
             </div>
             
       </div>
-      <KeyboardArrowDownIcon sx={{color: "pink-dark"}}/>
-      <div className="div-quote m-20 p-20 mx-4 justify-center rounded-3xl">
+      <KeyboardArrowDownIcon sx={{color: "white"}}/>
+      <div className="div-quote m-16 p-20 px-80 mx-4 justify-center rounded-3xl">
             <SimpleSlider/>
       </div>
 
