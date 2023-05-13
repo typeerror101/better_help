@@ -63,11 +63,8 @@ export default function NavBar() {
                 <ul>
                     {!user && (
                         <>
-                        <CustomButton sx={{margin:1, color: '#fff'}} color="secondary" variant="contained"  size="small">
+                        <CustomButton sx={{margin:2, color: '#fff',fontSize:14,fontWeight: 700}} size="small">
                         <Link to="/login">Login</Link>
-                        </CustomButton>
-                        <CustomButton>
-                        <Link style={{color: '#fff'}} className="right-nav-elements"  to="">Get Started</Link>
                         </CustomButton>
                     </> 
                     )}

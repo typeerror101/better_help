@@ -14,10 +14,10 @@ export default function Dashboard() {
     const navigate = useNavigate();
     const DisplayName = user.displayName.split(' ')[0];
   
-
+    if(!user) navigate("/login");
     if(loading) return <h1>Loading...</h1>
     // if(user) navigate("/")
-    if(!user) navigate("/login");
+    
   return (
     <div className="Mainbox container m-5 p-3 bg-slate-200 rounded-3xl ">
       <div className='w-auto flex flex-wrap px-5 py-5 m-7 justify-between' >

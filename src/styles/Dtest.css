@@ -2,9 +2,9 @@
   .app {
     background-color: #8b234f;
     color: #ffffff;
-
-    width: 800px;
-    min-height: 400px;
+    font-family: 'Poppins', sans-serif;
+    width: 1700px;
+    min-height: 500px;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
@@ -14,14 +14,15 @@
     align-items: center;
     margin: auto;
     margin-top: 13rem;
+    padding: 5rem;
   }
-  
+/*   
   .score-section {
     display: flex;
     font-size: 24px;
     align-items: center;
   }
-  
+   */
   /* QUESTION/TIMER/LEFT SECTION */
   .question-section {
     width: 100%;
@@ -65,13 +66,13 @@
     width: 100%;
     font-size: 16px;
     color: #ffffff;
-    background-color: #e72f6d;
+    /* background-color: #ffffff; */
     border-radius: 15px;
     display: flex;
     padding: 13px;
     justify-content: flex-start;
     align-items: center;
-    border: 5px solid #ffffff;
+    border: 2.5px solid #ffffff;
     cursor: pointer;
   }
   
@@ -83,7 +84,7 @@
     background-color: #ff3333;
   }
   
-  button:hover {
+  .test-btn:hover {
     background-color: #ce4076;
   }
   
@@ -93,4 +94,76 @@
   
   button svg {
     margin-right: 5px;
+  }
+
+  .scoreCard{
+    background-color: #8b234f;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+
+    font-style: normal;
+    width: 800px;
+    min-height: 400px;
+    height: min-content;
+    border-radius: 15px;
+    box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+    display: list-item;
+    margin: auto;
+    margin-top: 13rem;
+  }
+
+  .mainResult{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background-color: #8f063f;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2rem ;
+    /* padding-top: 2rem; */
+    
+    align-items: center;
+    
+  }
+
+  .scoreDesc{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.2rem;
+    padding: 2rem;
+  }
+
+  .score-section{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ce4076;
+    padding: 1rem;
+    margin: auto;
+    
+    border-radius: 20px;
+    width: 40%;
+  }
+  
+  .score-button{
+    font-family: 'Poppins', sans-serif;
+    background-color: #ce4076;
+    padding: 0rem;
+    margin: auto;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+  }
+  
+  .score-section:hover{
+    font-family: 'Poppins', sans-serif;
+    background-color: #df5b8d;
+    padding: 1rem;
+    margin: auto;
+    
+    border-radius: 20px;
+    width: 40%;
+  
+  }
+
+  .button-grp{
+    display: flex;
   }

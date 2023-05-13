@@ -9,9 +9,9 @@
 body{
     margin: 0;
     background-color: #efedf0;
-    backdrop-filter: blur(3px);
-    background-image: url('../../public/images/cloudBed.jpg');
-    
+    backdrop-filter: blur(0px);
+    background-image: url('../../public/images/gradient.jpg');
+    background-size:contain;
 }
 
 
@@ -24,8 +24,8 @@ body{
 .mainText {
     color: #ffffff;
     margin-bottom: 2rem;
-    margin-top: .8rem;
-    font-size: 4.7rem;
+    margin-top: 6.8rem;
+    font-size: 4rem;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
@@ -35,23 +35,24 @@ body{
 .mainText h2{
     margin-top: 0rem;
     font-size: 1.3rem;
-    color: #420516;
+    color: #f7f7f7;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    text-shadow: 1px 1px 2px #F0EEED, 0 0 0em #7D1935, 0 0 0em #7D1935;
+    /* text-shadow: 1px 1px 2px #F0EEED, 0 0 0em #7D1935, 0 0 0em #7D1935; */
 }
 
 .Cards{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 2.5rem;
+    /* color:#888398 !important ; */
 }
 
 
 .nav{
-    background-color: #8b2744;
+    
     font-family: 'Caveat', cursive;
-    font-size: large;
+    font-size: larger;
     font-weight: 700;
     color: #ffffff;
     display: flex;
@@ -104,9 +105,11 @@ body{
     border-width: 0 0 6px 0;
     border-bottom-color: #ffffff;
     border-bottom-width: 6px;
-    /* border-radius: 2px;
-    border-top-right-radius: 2px; */
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
+ 
+
 
 .nav li:hover{
     border-style: solid;
@@ -114,18 +117,24 @@ body{
     border-width: 0 0 6px 0;
     border-bottom-color: #ffffff;
     border-bottom-width: 6px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
     height: 400px;
     width: 325px;
     object-fit: fill;
-    box-shadow: 250px 100px  450px -6px #7D1935;
+    /* box-shadow: 250px 100px  450px -6px #f286f3; */
 }
 
 .div-quote{
-    background-color: #B42B51;
-    box-shadow: 2px 1px  9px 0px #666464;
+    /* background-color: #B42B51; */
+    /* box-shadow: 2px 1px  9px 0px #666464; */
+    margin-top: 7rem;
+    backdrop-filter: blur(5000px);
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 /* .topContainer{
@@ -140,8 +149,8 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 }
 
 .footer{
-    background-color: #7D1935;
-    padding: 40px;
+    /* background-color: #7D1935; */
+    padding: 20px;
     font-family: 'Roboto', sans-serif;
     font-style: none;
 }
@@ -169,4 +178,8 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 .secondContainer{
     margin: 0;
     
+}
+customButton{
+    font-weight: 900;
+    background-color: aqua;
 }
