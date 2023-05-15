@@ -164,7 +164,7 @@ export default function Parent() {
         if(nextQuestion < questions.length){
             setCurrentQuestion(nextQuestion);
         }else{
-			setScore(CScore+Dscore+AScore)
+			setScore(CScore+DScore+AScore)
             console.log(Score);
             setQuizEnd(true);
 
@@ -201,7 +201,7 @@ export default function Parent() {
 			}else{
 				SetDCondition("Severe Depression");
 				SetDDesc("Your results indicate that you may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
-			}``
+			}
 			//max cscore 16
 			if(CScore < 5){
 				SetCCondition("Minimal difficulty with conduct");
@@ -244,13 +244,39 @@ export default function Parent() {
 		<div className='app'>
 			{ QuizEnd ? (
 				<div className="scoreCard">
+				<div>
 					<div className='mainResult'>You have {condition}</div>
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
-						<div className='score-section'>You scored {Score} out of 32</div>
+						<div className='score-section'>You scored {Score} out of 36</div>
 						<div className='score-section score-button'>Consult your Therapist now!</div>
 					</div>
+				</div>
+				<div>
+					<div className='mainResult'>You have {Dcondition}</div>
+					<div className='scoreDesc'>{DDesc}</div>
+					<div className='button-grp'>
+						<div className='score-section'>You scored {DScore} out of 12</div>
+						<div className='score-section score-button'>Consult your Therapist now!</div>
+					</div>
+				</div>
+				<div>
+					<div className='mainResult'>You have {Ccondition}</div>
+					<div className='scoreDesc'>{CDesc}</div>
+					<div className='button-grp'>
+						<div className='score-section'>You scored {CScore} out of 16</div>
+						<div className='score-section score-button'>Consult your Therapist now!</div>
+					</div>
+				<div>
+					<div className='mainResult'>You have {Acondition}</div>
+					<div className='scoreDesc'>{ADesc}</div>
+					<div className='button-grp'>
+						<div className='score-section'>You scored {AScore} out of 8</div>
+						<div className='score-section score-button'>Consult your Therapist now!</div>
+					</div>
+				</div>
 			</div>
+		</div>				
 			) : (
 				<>
 					<div className='question-section'>
@@ -261,11 +287,7 @@ export default function Parent() {
 					</div>
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOptions) => (
-<<<<<<< Updated upstream
-                            <button onClick={() => handleAnswerButtonClick(answerOptions.point)}>{answerOptions.answerText}</button>  
-=======
                             <button className='btn' onClick={() => handleAnswerButtonClick(answerOptions.apoint,answerOptions.dpoint,answerOptions.cpoint)}>{answerOptions.answerText}</button>  
->>>>>>> Stashed changes
                         ))}
 					</div>
 				</>
