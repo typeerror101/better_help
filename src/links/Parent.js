@@ -288,6 +288,7 @@ export default function Parent() {
 					<div className='answer-section'>
 						{questions[currentQuestion].answerOptions.map((answerOptions) => (
                             <button className='btn' onClick={() => handleAnswerButtonClick(answerOptions.apoint,answerOptions.dpoint,answerOptions.cpoint)}>{answerOptions.answerText}</button>  
+
                         ))}
 					</div>
 				</>
