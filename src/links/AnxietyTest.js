@@ -1,13 +1,13 @@
 import React, {useState} from 'react'
-import "../styles/Dtest.css"
+import "../styles/Atest.css"
 import { Button } from '@mui/material';
 
 
-export default function DepressionTest() {
+export default function AnxietyTest() {
 
  const questions = [
 		{
-			questionText: '1. Little interest or pleasure in doing things',
+			questionText: '1. Feeling nervous, anxious, or on edge',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -16,7 +16,7 @@ export default function DepressionTest() {
 			],
 		},
 		{
-			questionText: '2. Feeling down, depressed, or hopeless?',
+			questionText: '2. Not being able to stop or control worrying',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -25,7 +25,8 @@ export default function DepressionTest() {
 			],
 		},
 		{
-			questionText: '3. Trouble falling or staying asleep, or sleeping too much?',
+
+			questionText: '3. Worrying too much about different things',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -34,7 +35,7 @@ export default function DepressionTest() {
 			],
 		},
 		{
-			questionText: '4. Feeling tired or having little energy?',
+			questionText: '4. Trouble relaxing',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -43,7 +44,7 @@ export default function DepressionTest() {
 			],
 		},
         {
-			questionText: '5. Poor appetite or overeating?',
+			questionText: '5. Being so restless that it is hard to sit still',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -52,7 +53,7 @@ export default function DepressionTest() {
 			],
 		},
         {
-			questionText: '6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down?',
+			questionText: '6. Becoming easily annoyed or irritable',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -61,34 +62,7 @@ export default function DepressionTest() {
 			],
 		},
         {
-			questionText: '7. Trouble concentrating on things, such as reading the newspaper or watching television?',
-			answerOptions: [
-				{ answerText: 'Not At All', isCorrect: 0 },
-				{ answerText: 'Some Days', isCorrect: 1 },
-				{ answerText: 'More Than Half The Days', isCorrect: 2 },
-				{ answerText: 'Nearly Every Day', isCorrect: 3 },
-			],
-		},
-        {
-			questionText: '8. Moving or speaking so slowly that other people could have noticed Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual?',
-			answerOptions: [
-				{ answerText: 'Not At All', isCorrect: 0 },
-				{ answerText: 'Some Days', isCorrect: 1 },
-				{ answerText: 'More Than Half The Days', isCorrect: 2 },
-				{ answerText: 'Nearly Every Day', isCorrect: 3 },
-			],
-		},
-        {
-			questionText: '9. Thoughts that you would be better off dead, or of hurting yourself?',
-			answerOptions: [
-				{ answerText: 'Not At All', isCorrect: 0 },
-				{ answerText: 'Some Days', isCorrect: 3 },
-				{ answerText: 'More Than Half The Days', isCorrect: 4 },
-				{ answerText: 'Nearly Every Day', isCorrect: 5 },
-			],
-		},
-        {
-			questionText: '10. If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people?',
+			questionText: '7. Feeling afraid, as if something awful might happen',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
 				{ answerText: 'Some Days', isCorrect: 1 },
@@ -101,9 +75,8 @@ export default function DepressionTest() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [Score, setScore] = useState(0);
     const [QuizEnd, setQuizEnd] = useState(false);
-	const [condition, SetCondition] = useState("Minimal Depression");
+	const [condition, SetCondition] = useState("");
 	const [Desc, SetDesc] = useState("");
-
 
 
     const handleAnswerButtonClick = (isCorrect) => {
@@ -115,18 +88,22 @@ export default function DepressionTest() {
             console.log(Score);
             setQuizEnd(true);
 
-			if(Score < 4){
+			if(Score < 5){
 				SetCondition("Minimal Anxiety");
 				SetDesc("Your results indicate that you have none, or very few signs of anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
-			}else if(Score >=5 && Score <=9){
-				SetCondition("Mild Anxiety");
-				SetDesc("Your results indicate that you may be experiencing some signs of mild anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
-			}else if(Score >=10 && Score <=14){
-				SetCondition("Moderate Anxiety");
-				SetDesc("Your results indicate that you may be experiencing some signs of moderate anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
-			}else if(Score >=15){
-				SetCondition("Severe Anxiety");
-				SetDesc("Your results indicate that you may be experiencing signs of moderately severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+			}else if(Score >=3 && Score <=7){
+				SetCondition("Mild anxiety");
+				SetDesc("Your results indicate that you may be experiencing signs of mild anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+			}else if(Score >=8 && Score <=13){
+				SetCondition("Moderate anxiety");
+				SetDesc("Your results indicate that you may be experiencing signs of moderate anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+			}else if(Score >=14 && Score <=17){
+				SetCondition("Moderately severe anxiety");
+				SetDesc("Your results indicate that you may be experiencing signs of moderately severe anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+			}else{
+				SetCondition("Severe anxiety");
+				SetDesc("Your results indicate that you may be experiencing signs of severe anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+
 			}
 			
         }
@@ -162,4 +139,6 @@ export default function DepressionTest() {
 		</div>
 	);
 }
+
     
+
