@@ -53,9 +53,7 @@ export default function NavBar() {
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/depressionTest">DepressionTest</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/parent">Parent</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/support">Support</CustomLink>
                     

@@ -19,7 +19,7 @@ export default function Dashboard() {
     // if(user) navigate("/")
     
   return (
-    <div className="Mainbox container m-5 p-3 bg-slate-200 rounded-3xl ">
+    <div className="Mainbox ">
       <div className='w-auto flex flex-wrap px-5 py-5 m-7 justify-between' >
         <div className="greetText m-3 p-2 rounded-xl" > 
           <h1>Good Morning, <span>{DisplayName}</span> 👋</h1>
@@ -33,7 +33,7 @@ export default function Dashboard() {
           <Button variant="contained">Start</Button>
         </div>
       </div>
-      <div className='secondContainer flex flex-wrap w-full bg-slate-300 rounded-2xl p-5'>
+      <div className='secondContainer flex flex-wrap w- bg-slate-300 rounded-2xl p-5'>
         <div className='leftHalf w-2/3 gap-y-10'>
           <div className="searchBar w-full flex flex-wrap gap-2">
             <div className="bg-slate-400 w-4/5 rounded-xl">
