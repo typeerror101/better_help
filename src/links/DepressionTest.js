@@ -6,8 +6,10 @@ import { Button } from '@mui/material';
 export default function DepressionTest() {
 
 	const [details, setDetails] = useState({
-
+		Score: '',
+		Condition: '',
 	})
+
 	
  const questions = [
 		{
@@ -136,8 +138,27 @@ export default function DepressionTest() {
 				SetDesc("Your results indicate that you may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
 			}
 			
+			// const PostData = async(e) => {
+			// 	e.preventDefault()
+		
+			// 	const{Score,Condition}=details;
+		
+			// 	const res=await fetch("https://react-auth-82537-default-rtdb.asia-southeast1.firebasedatabase.app/quizData.json",{
+			// 		method: 'POST',
+			// 		headers:{
+			// 			'Content-Type':'application/json'
+			// 		},
+			// 		body:JSON.stringify({
+			// 			Score,
+			// 			Condition,
+			// 		})
+			// 	})
         }
+		
     }
+
+
+	}
 
 	return (
 		<div>
