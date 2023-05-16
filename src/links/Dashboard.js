@@ -24,6 +24,7 @@ export default function Dashboard() {
         <div className="greetText m-3 p-2 rounded-xl" > 
           <h1>Good Morning, <span>{DisplayName}</span> 👋</h1>
           <h2>Welcome to your Dashboard </h2>
+
         </div>
         <div className="w-1/3 m-3 p-2 bg-slate-400 rounded-xl">
           <div>

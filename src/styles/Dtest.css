@@ -3,14 +3,14 @@
     background-color: #028eb16c;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-    width: 1700px;
-    min-height: 500px;
+    width: 80%;
+    min-height: 90%;
     height: min-content;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     margin-top: 13rem;
@@ -78,7 +78,7 @@
   
   .correct {
     background-color: #2f922f;
-  }
+  }You have Minimal Depression
   
   .incorrect {
     background-color: #ff3333;
@@ -136,7 +136,7 @@
   .score-section{
     font-family: 'Poppins', sans-serif;
     background-color: #ce4076;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: auto;
     
     border-radius: 20px;
@@ -146,22 +146,32 @@
   .score-button{
     font-family: 'Poppins', sans-serif;
     background-color: #ce4076;
-    padding: 0rem;
+    padding: 0.rem;
     margin: auto;
-    border: none;
+    
     border-radius: 20px;
-    width: 80%;
+    width: 50%;
   }
-  
+   
   .score-section:hover{
     font-family: 'Poppins', sans-serif;
     background-color: #df5b8d;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: auto;
     
     border-radius: 20px;
     width: 40%;
   
+  }
+
+  .score-button:hover{
+    font-family: 'Poppins', sans-serif;
+    background-color: #df5b8d;
+    padding: 0.rem;
+    margin: auto;
+    
+    border-radius: 20px;
+    width: 50%;
   }
 
   .button-grp{
