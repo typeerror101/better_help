@@ -171,71 +171,71 @@ export default function Parent() {
 			//max Score = 36
 			if(Score < 5){
 				SetCondition("Minimal difficulties in overall psychosocial functioning");
-				SetDesc("Your results indicate that you have none, or very few signs of difficulties in overall psychosocial functioning. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you have none, or very few signs of difficulties in overall psychosocial functioning.");
 			}else if(Score >=5 && Score <=9){
 				SetCondition("Mild pychosocial functioning difficulties");
-				SetDesc("Your results indicate that you may be experiencing signs of pychosoical problems. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you may be experiencing signs of pychosoical problems.");
 			}else if(Score >=10 && Score <=14){
 				SetCondition("Moderate pychosocial functioning difficulties");
-				SetDesc("Your results indicate that you may be experiencing signs of moderate depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you may be experiencing signs of moderate depression.");
 			}else if(Score >=15 && Score <=32){
 				SetCondition("Moderately severe pychosocial functioning difficulties");
-				SetDesc("Your results indicate that you may be experiencing signs of moderately severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you may be experiencing signs of moderately severe depression.");
 			}else{
 				SetCondition("Severe pychosocial functioning difficulties");
-				SetDesc("Your results indicate that you may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you may be experiencing signs of severe depression.");
 			}
 			//max Dscore = 12
 			if(DScore < 2){
 				SetDCondition("Minimal Depression");
-				SetDDesc("Your results indicate that you have none, or very few signs of depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDDesc("Your results indicate that you have none, or very few signs of depression.");
 			}else if(DScore >=2 && DScore <=5){
 				SetDCondition("Mild Depression");
-				SetDDesc("Your results indicate that you may be experiencing signs of mild depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDDesc("Your results indicate that you may be experiencing signs of mild depression.");
 			}else if(DScore >=5 && DScore <=8){
 				SetDCondition("Moderate Depression");
-				SetDDesc("Your results indicate that you may be experiencing signs of moderate depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDDesc("Your results indicate that you may be experiencing signs of moderate depression.");
 			}else if(DScore >=8 && DScore <=10){
 				SetDCondition("Moderately severe depression");
-				SetDDesc("Your results indicate that you may be experiencing signs of moderately severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDDesc("Your results indicate that you may be experiencing signs of moderately severe depression.");
 			}else{
 				SetDCondition("Severe Depression");
-				SetDDesc("Your results indicate that you may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDDesc("Your results indicate that you may be experiencing signs of severe depression.");
 			}
 			//max cscore 16
 			if(CScore < 5){
 				SetCCondition("Minimal difficulty with conduct");
-				SetCDesc("Your results indicate that you have none, or very few signs of difficulty with conduct. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetCDesc("Your results indicate that you have none, or very few signs of difficulty with conduct.");
 			}else if(CScore >=5 && CScore <=9){
 				SetCCondition("Mild difficulty with conduct");
-				SetCDesc("Your results indicate that you may be experiencing signs of mild difficulty with conduct. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetCDesc("Your results indicate that you may be experiencing signs of mild difficulty with conduct.");
 			}else if(CScore >=10 && CScore <=14){
 				SetCCondition("Moderate difficulty with conduct");
-				SetCDesc("Your results indicate that you may be experiencing signs of moderate difficulty with conduct. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetCDesc("Your results indicate that you may be experiencing signs of moderate difficulty with conduct.");
 			}else if(CScore >=15 && CScore <=32){
 				SetCCondition("Moderately severe difficulty with conduct");
-				SetCDesc("Your results indicate that you may be experiencing signs of moderately severe difficulty with conduct. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetCDesc("Your results indicate that you may be experiencing signs of moderately severe difficulty with conduct.");
 			}else{
 				SetCCondition("Severe difficulty with conduct");
-				SetCDesc("Your results indicate that you may be experiencing signs of severe difficulty with conduct. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetCDesc("Your results indicate that you may be experiencing signs of severe difficulty with conduct.");
 			}
 			
 			//max AScore = 8
 			if(AScore < 2){
 				SetACondition("Minimal ");
-				SetADesc("Your results indicate that you have none, or very few signs of attention difficulties. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetADesc("Your results indicate that you have none, or very few signs of attention difficulties.");
 			}else if(AScore >=2 && AScore <=3){
 				SetACondition("Mild Depression");
-				SetADesc("Your results indicate that you may be experiencing signs of mild attention difficulties. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetADesc("Your results indicate that you may be experiencing signs of mild attention difficulties.");
 			}else if(AScore >=3 && AScore <=4){
 				SetACondition("Moderate Depression");
-				SetADesc("Your results indicate that you may be experiencing signs of moderate attention difficulties. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetADesc("Your results indicate that you may be experiencing signs of moderate attention difficulties.");
 			}else if(AScore >=4 && AScore <=6){
 				SetACondition("Moderately severe depression");
-				SetADesc("Your results indicate that you may be experiencing signs of moderately severe attention difficulties. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetADesc("Your results indicate that you may be experiencing signs of moderately severe attention difficulties.");
 			}else{
 				SetACondition("Severe Depression");
-				SetADesc("Your results indicate that you may be experiencing signs of severe attention difficulties. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetADesc("Your results indicate that you may be experiencing signs of severe attention difficulties.");
 			}
         }
     }
@@ -243,39 +243,39 @@ export default function Parent() {
 	return (
 		<div className='app'>
 			{ QuizEnd ? (
-				<div className="scoreCard">
-				<div>
+			<div className="grid">
+				<div className='one'>
 					<div className='mainResult'>You have {condition}</div>
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
 						<div className='score-section'>You scored {Score} out of 36</div>
-						<div className='score-section score-button'>Consult your Therapist now!</div>
+						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}
 					</div>
 				</div>
-				<div>
+				<div className='two'>
 					<div className='mainResult'>You have {Dcondition}</div>
 					<div className='scoreDesc'>{DDesc}</div>
 					<div className='button-grp'>
 						<div className='score-section'>You scored {DScore} out of 12</div>
-						<div className='score-section score-button'>Consult your Therapist now!</div>
+						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}
 					</div>
 				</div>
-				<div>
+				<div className='three'>
 					<div className='mainResult'>You have {Ccondition}</div>
 					<div className='scoreDesc'>{CDesc}</div>
 					<div className='button-grp'>
 						<div className='score-section'>You scored {CScore} out of 16</div>
-						<div className='score-section score-button'>Consult your Therapist now!</div>
+						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}
 					</div>
-				<div>
+				</div>
+				<div className='four'>
 					<div className='mainResult'>You have {Acondition}</div>
 					<div className='scoreDesc'>{ADesc}</div>
 					<div className='button-grp'>
 						<div className='score-section'>You scored {AScore} out of 8</div>
-						<div className='score-section score-button'>Consult your Therapist now!</div>
+						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}
 					</div>
 				</div>
-			</div>
 		</div>				
 			) : (
 				<>

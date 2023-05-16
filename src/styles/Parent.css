@@ -14,10 +14,16 @@
     margin: auto;
     margin-top: 13rem;
   }
+
+  .button-grp{
+    display: flex;
+    /* width:90%; */
+    justify-items: end;
+  }
   
   .score-section {
     display: flex;
-    font-size: 24px;
+    font-size: 24px; 
     align-items: center;
   }
   
@@ -82,7 +88,7 @@
     background-color: #ff3333;
   }
   
-  .btn:hover {
+  button:hover {
     background-color: #ce4076;
   }
   
@@ -93,3 +99,47 @@
   button svg {
     margin-right: 5px;
   }
+
+.mainResult{
+  height: max-content;
+}
+
+.scoreCard{
+
+}
+
+.grid {
+  border: 5px solid rgb(111,41,97);
+  display: grid;
+  grid-template-areas:
+    "one one two two"
+    "one one two two"
+    "three three four four"
+    "three three four four";
+  gap: 10px;
+  /* grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 100px); */
+  /* inline-size: 500px; */
+}
+
+.grid > * {
+  background-color: rgba(111,41,97,.4);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.one {
+  grid-area: one;
+}
+
+.two {
+  grid-area: two;
+}
+
+.three {
+  grid-area: three;
+}
+
+.four {
+  grid-area: four;
+}
