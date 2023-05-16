@@ -253,8 +253,10 @@ export default function Parent() {
 					</div>
 				</div>
 				<div className='two'>
-					<div className='mainResult'>You have {Dcondition}</div>
-					<div className='scoreDesc'>{DDesc}</div>
+					<div>
+						<div className='mainResult'>You have {Dcondition}</div>
+						<div className='scoreDesc'>{DDesc}</div>
+					</div>
 					<div className='button-grp'>
 						<div className='score-section'>You scored {DScore} out of 12</div>
 						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}

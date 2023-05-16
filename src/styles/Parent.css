@@ -17,8 +17,8 @@
 
   .button-grp{
     display: flex;
-    /* width:90%; */
-    justify-items: end;
+    width:90%;
+    justify-content: end;
   }
   
   .score-section {
