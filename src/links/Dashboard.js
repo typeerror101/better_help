@@ -64,7 +64,8 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        <div className='rightHalf h-100% w-1/3 bg-yellow-300 rounded-3xl'>
+        <div className='rightHalf h-100% w-1/3  rounded-3xl'>
+          <iframe src="https://open.spotify.com/embed/playlist/4Fh0313D3PitYzICKHhZ7r?utm_source=oembed" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
         </div>
       <br /><br /><br /><br />
