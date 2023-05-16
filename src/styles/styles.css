@@ -124,7 +124,8 @@ body{
 img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedia-root {
     height: 400px;
     width: 325px;
-    object-fit: fill;
+    object-fit:cover;
+    object-position: 20%;
     /* box-shadow: 250px 100px  450px -6px #f286f3; */
 }
 
@@ -158,10 +159,11 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 .Mainbox{
     font-family: 'Rubik' , sans-serif;
     margin: 10px auto;
-    width: 100%;
-    background-image: url('../../public/images/background-support.jpg');
+    width: 90%;;
+
+    /* background-image: url('../../public/images/blue1.jpeg'); */
     backdrop-filter: blur(3px);
-    background-size: contain;
+    background-size:auto;
 }
 
 .greetText h1{

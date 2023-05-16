@@ -5,6 +5,10 @@ import { Button } from '@mui/material';
 
 export default function DepressionTest() {
 
+	const [details, setDetails] = useState({
+
+	})
+	
  const questions = [
 		{
 			questionText: '1. Little interest or pleasure in doing things',
