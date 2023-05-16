@@ -25,6 +25,7 @@ export default function AnxietyTest() {
 			],
 		},
 		{
+
 			questionText: '3. Worrying too much about different things',
 			answerOptions: [
 				{ answerText: 'Not At All', isCorrect: 0 },
@@ -102,6 +103,7 @@ export default function AnxietyTest() {
 			}else{
 				SetCondition("Severe anxiety");
 				SetDesc("Your results indicate that you may be experiencing signs of severe anxiety. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+
 			}
 			
         }
@@ -137,4 +139,6 @@ export default function AnxietyTest() {
 		</div>
 	);
 }
+
     
+

@@ -8,23 +8,12 @@ import { CardActionArea } from '@mui/material';
 import SimpleSlider from "../Components/carousel";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import Footer from "../Components/footer";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 
 export default function Home(){
-    // Quotes api code
-
-    // const [Quote1, setQuote1] = useState([]);
-    
-    // useEffect(() => {
-    //     const requestQuote = async() =>{
-    //         const getQuote = await axios.get("https://type.fit/api/quotes");
-    //         setQuote1(getQuote.data);
-    //     };
-        
-    //     requestQuote();
-    // },[]);  
-
+    const navigate = useNavigate();
 
     return(
         <>
@@ -40,15 +29,16 @@ export default function Home(){
                     component="img"
                     height="235px"
                     width= "266px"
-                    image= "/images/individual2.jpg"
+                    image= "/images/depression.jpg"
                     alt="Individial_img"
+                    onClick={ () => {navigate("/DepressionTest") }}
                 />
                 <CardContent>
-                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
-                    Individual 
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 1, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Are you feeling down?
                 </Typography>
                 <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
-                    For myself
+                    Take a Quiz now!
                 </Typography>
                 </CardContent>
             </CardActionArea>
@@ -60,15 +50,16 @@ export default function Home(){
                 <CardMedia
                 component="img"
                 height="410"
-                image="/images/couples.jpg"
+                image="/images/anxiety.jpg"
                 alt="green iguana"
+                onClick={ () => {navigate("/AnxietyTest") }}
                 />
                 <CardContent>
-                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
-                    Couple 
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 1, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Feeling Anxious?
                 </Typography>
                 <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
-                   For me and my partner
+                   Take a Quiz now!
                 </Typography>
                 </CardContent>
             </CardActionArea>
@@ -80,21 +71,21 @@ export default function Home(){
                 <CardMedia
                 component="img"
                 height="410"
-                image="/images/teenager4.jpg"
+                image="/images/parent.jpg"
                 alt="green iguana"
+                onClick={ () => {navigate("/Parent") }}
                 />
                 <CardContent>
-                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 3, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
-                    Teenager 
+                <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 1, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
+                    Is your child mentally happy?
                 </Typography>
                 <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
-                    For my child
+                    Take a Quiz for your child now!
                 </Typography>
                 </CardContent>
             </CardActionArea>
             </Card>
-            </div>
-            
+            </div>    
       </div>
       <KeyboardArrowDownIcon sx={{color: "white"}}/>
       <div className="div-quote m-16 p-20 px-80 mx-4 justify-center rounded-3xl">
