@@ -108,6 +108,7 @@
     border-radius: 15px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: list-item;
+    list-style: none;
     margin: auto;
     margin-top: 13rem;
   }
@@ -133,47 +134,45 @@
     padding: 2rem;
   }
 
-  .score-section{
+  .score-section1{
     font-family: 'Poppins', sans-serif;
     background-color: #ce4076;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin: auto;
-    
+    margin-left: 6rem;
     border-radius: 20px;
     width: 40%;
   }
   
-  .score-button{
+  .score-button1{
     font-family: 'Poppins', sans-serif;
     background-color: #ce4076;
     padding: 0.rem;
     margin: auto;
-    
+    margin-left: 2rem;
     border-radius: 20px;
     width: 50%;
   }
    
-  .score-section:hover{
+  .score-section1:hover{
     font-family: 'Poppins', sans-serif;
     background-color: #df5b8d;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin: auto;
-    
+    margin-left: 6rem;
     border-radius: 20px;
     width: 40%;
-  
   }
 
-  .score-button:hover{
+  .score-button1:hover{
     font-family: 'Poppins', sans-serif;
     background-color: #df5b8d;
     padding: 0.rem;
     margin: auto;
-    
+    margin-left: 2rem;
     border-radius: 20px;
     width: 50%;
   }
-
   .button-grp{
     display: flex;
   }
