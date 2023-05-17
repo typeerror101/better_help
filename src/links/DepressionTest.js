@@ -163,9 +163,6 @@ export default function DepressionTest() {
 		
     }
 
-
-	
-
 	return (
 		<div>
 		
