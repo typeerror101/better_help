@@ -1,0 +1,80 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, #fff, #f8eedb);
+    border: 0 solid #e5e7eb;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #482307;
+    column-gap: 1rem;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 10px;
+    outline: 2px solid transparent;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    text-transform: none;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    box-shadow: -6px 8px 10px rgba(81, 41, 10, 0.1), 0px 2px 2px rgba(81, 41, 10, 0.2);
+  }
+  
+  .search-input-container {
+    display: flex;
+    align-items: center;
+    background-color: #85FFBD; /* Change the background color to #85FFBD */
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); /* Add the linear gradient */
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .search-input-container input[type="text"] {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: #482307;
+    background-color: #85FFBD; /* Change the background color to #85FFBD */
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); /* Add the linear gradient */
+  } 
+
+
+searchBox {
+    background-color: none;
+    justify-content: right;
+}
+
+.cards {
+    display: flex;
+    align-items: stretch;
+}
+
+.heading {
+    font-size: 40px;
+    font-family: Copperplate, Copperplate Gothic Light, fantasy;
+    margin: 10px;
+    padding: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
