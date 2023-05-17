@@ -5,7 +5,9 @@ import Home from './links/Home';
 import Login from './links/Login';
 import Dashboard from './links/Dashboard';
 import Parent from './links/Parent';
+import AnxietyTest from './links/AnxietyTest';
 import DepressionTest from './links/DepressionTest';
+import Music from './links/Music';
 import NavBar from './NavBar';
 import { Route, Routes } from "react-router-dom";
 
@@ -33,6 +35,7 @@ function App() {
           <Route path='/getstarted' />
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
+
       </div>
 
     </>

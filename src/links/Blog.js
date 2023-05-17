@@ -18,8 +18,6 @@ import StyledInputBase from '@mui/material/InputBase';
 
 
 export default function ImgMediaCard() {
-
-
   return (
     <>
       <div className='heading'>
