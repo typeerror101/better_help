@@ -21,10 +21,9 @@
     justify-content: end;
   }
   
-  .score-section {
-    display: flex;
+  .score-section2 {
     font-size: 24px; 
-    align-items: center;
+    margin-left: 1
   }
   
   /* QUESTION/TIMER/LEFT SECTION */
@@ -88,7 +87,7 @@
     background-color: #ff3333;
   }
   
-  button:hover {
+  .btn:hover {
     background-color: #ce4076;
   }
   
