@@ -25,58 +25,59 @@ export default function ImgMediaCard() {
       </div>
 
       <div className='header'>
-          <FormControl sx={{ m: 1, minWidth: 120, backgroundColor: '' }} className="select-container">
-            <InputLabel htmlFor="grouped-native-select">Categories</InputLabel>
-            <Select native defaultValue="" id="grouped-native-select" label="Grouping">
-              {/* <option aria-label="None" value="" /> */}
-              <optgroup>
-                <option value={1}>Active Duty</option>
-                <option value={2}>Anxiety Disorders</option>
-                <option value={2}>Personality Disorders</option>
-                <option value={2}>Treatment Resistant Depression</option>
-              </optgroup>
-            </Select>
-          </FormControl>
+        <FormControl sx={{ m: 1, minWidth: 120, backgroundColor: '' }} className="select-container">
+          <InputLabel htmlFor="grouped-native-select">Categories</InputLabel>
+          <Select native defaultValue="" id="grouped-native-select" label="Grouping">
+            {/* <option aria-label="None" value="" /> */}
+            <optgroup>
+              <option value={1}>Active Duty</option>
+              <option value={2}>Anxiety Disorders</option>
+              <option value={2}>Personality Disorders</option>
+              <option value={2}>Treatment Resistant Depression</option>
+            </optgroup>
+          </Select>
+        </FormControl>
 
-          <FormControl sx={{ m: 1, minWidth: 120 }} className="select-container">
-            <InputLabel htmlFor="grouped-select">Archives</InputLabel>
-            <Select defaultValue="" id="grouped-select" label="Grouping">
-              <MenuItem value=""></MenuItem>
-              <MenuItem value={1}>January</MenuItem>
-              <MenuItem value={2}>February</MenuItem>
-              <MenuItem value={2}>March</MenuItem>
-              <MenuItem value={2}>April</MenuItem>
-              <MenuItem value={2}>May</MenuItem>
-              <MenuItem value={2}>June</MenuItem>
-              <MenuItem value={2}>July</MenuItem>
-              <MenuItem value={2}>August</MenuItem>
-              <MenuItem value={2}>September</MenuItem>
-              <MenuItem value={2}>October</MenuItem>
-              <MenuItem value={2}>November</MenuItem>
-              <MenuItem value={2}>December</MenuItem>
-            </Select>
-          </FormControl>
-  
-          <div className="search-input-container">
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-              style={{ backgroundColor: 'white' }}
-            />
-          </div>  
+        <FormControl sx={{ m: 1, minWidth: 120 }} className="select-container">
+          <InputLabel htmlFor="grouped-select">Archives</InputLabel>
+          <Select defaultValue="" id="grouped-select" label="Grouping">
+            <MenuItem value=""></MenuItem>
+            <MenuItem value={1}>January</MenuItem>
+            <MenuItem value={2}>February</MenuItem>
+            <MenuItem value={2}>March</MenuItem>
+            <MenuItem value={2}>April</MenuItem>
+            <MenuItem value={2}>May</MenuItem>
+            <MenuItem value={2}>June</MenuItem>
+            <MenuItem value={2}>July</MenuItem>
+            <MenuItem value={2}>August</MenuItem>
+            <MenuItem value={2}>September</MenuItem>
+            <MenuItem value={2}>October</MenuItem>
+            <MenuItem value={2}>November</MenuItem>
+            <MenuItem value={2}>December</MenuItem>
+          </Select>
+        </FormControl>
+
+        <div className="search-input-container">
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase placeholder="Search…"
+            inputProps={{ 'aria-label': 'search' }}
+            style={{ backgroundColor: 'white' }}
+          />
         </div>
+      </div>
 
 
 
       <div className='Cards'>
 
         <Card sx={{ maxWidth: 345 }}>
-          <CardMedia
+          <CardMedia 
             component="img"
             alt="green iguana"
             height="140"
+            width="400"
             image="/images/img1.png"
           />
           <CardContent>
@@ -110,11 +111,12 @@ export default function ImgMediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-          <Link to="/Blog2">
+            <Link to="/Blog2">
               <Button size="small">Learn More 1</Button>
             </Link>
           </CardActions>
         </Card>
+
         <Card sx={{ maxWidth: 345 }}>
           <CardMedia
             component="img"
@@ -137,7 +139,9 @@ export default function ImgMediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Learn More</Button>
+          <Link to="/Blog3">
+              <Button size="small">Learn More</Button>
+            </Link>
           </CardActions>
         </Card>
 
@@ -157,7 +161,9 @@ export default function ImgMediaCard() {
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small">Learn More</Button>
+          <Link to="/Blog4">
+              <Button size="small">Learn More</Button>
+            </Link>
           </CardActions>
         </Card>
 
