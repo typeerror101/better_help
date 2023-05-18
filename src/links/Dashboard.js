@@ -1,6 +1,7 @@
 import {auth} from "../utils/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from "react-router-dom";
+import "../styles/dashboard.css"
 //mui
 
 import { Button } from '@mui/material';
