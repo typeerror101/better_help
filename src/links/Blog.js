@@ -14,6 +14,7 @@ import { Link } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import SearchIconWrapper from '@mui/icons-material/Search';
 import StyledInputBase from '@mui/material/InputBase';
+import { Minimize } from '@mui/icons-material';
 
 
 
@@ -90,12 +91,12 @@ export default function ImgMediaCard() {
           </CardContent>
           <CardActions>
             <Link to="/Blog1">
-              <Button size="small">Learn More</Button>
+              <Button className="learnmore"  size="small">Learn More</Button>
             </Link>
           </CardActions>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 , maxHeight: 565 }}>
           <CardMedia
             component="img"
             alt="green iguana"
@@ -112,12 +113,12 @@ export default function ImgMediaCard() {
           </CardContent>
           <CardActions>
             <Link to="/Blog2">
-              <Button size="small">Learn More 1</Button>
+              <Button className="learnmore"  size="small">Learn More</Button>
             </Link>
           </CardActions>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345 , maxHeight: 613 }}>
           <CardMedia
             component="img"
             alt="green iguana"
@@ -140,12 +141,12 @@ export default function ImgMediaCard() {
           </CardContent>
           <CardActions>
           <Link to="/Blog3">
-              <Button size="small">Learn More</Button>
+              <Button className="learnmore"  size="small">Learn More</Button>
             </Link>
           </CardActions>
         </Card>
 
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, maxHeight: 550 }}>
           <CardMedia
             component="img"
             alt="green iguana"
@@ -162,7 +163,7 @@ export default function ImgMediaCard() {
           </CardContent>
           <CardActions>
           <Link to="/Blog4">
-              <Button size="small">Learn More</Button>
+              <Button className="learnmore" size="small">Learn More</Button>
             </Link>
           </CardActions>
         </Card>
