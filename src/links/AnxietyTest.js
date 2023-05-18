@@ -3,10 +3,14 @@ import "../styles/Atest.css"
 import { getDatabase, ref,update,set,onValue} from "firebase/database";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../utils/firebase';
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 export default function AnxietyTest() {
  const [user, loading] = useAuthState(auth);
+ const navigate = useNavigate();
 
  const questions = [
 		{
@@ -131,7 +135,7 @@ export default function AnxietyTest() {
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
 				    <div className='score-section1'>You scored {Score} out of 32</div>
-					<div className='score-section1 score-button1'>Consult your Therapist now!</div>
+					<div className='score-section1 score-button1' onClick={() => {navigate('/About')}}>Consult your Therapist now!</div>
 			        </div>
 				</div>
 			) : (

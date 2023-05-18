@@ -6,6 +6,8 @@ import {db} from '../utils/firebase'
 import { getDatabase, ref, onValue, set } from "firebase/database";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { auth } from '../utils/firebase';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
@@ -13,7 +15,7 @@ export default function DepressionTest() {
 
 	
 const [user, loading] = useAuthState(auth);
-
+const navigate = useNavigate();
 	
  const questions = [
 		{
@@ -177,7 +179,7 @@ const [user, loading] = useAuthState(auth);
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
 				    <div className='score-section'>You scored {Score} out of 32</div>
-					<div className='score-section score-button'>Consult your Therapist now!</div>
+					<div className='score-section score-button' onClick={() => {navigate('/About')}}>Consult your Therapist now!</div>
 			        </div>
 				</div>
 			) : (

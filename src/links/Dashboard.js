@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { getDatabase, ref, onValue } from 'firebase/database';
 
 //mui
-
+import {useEffect} from "react";
 import { Button } from '@mui/material';
 import { IconBase } from 'react-icons';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
@@ -22,7 +22,15 @@ export default function Dashboard() {
     const userId= user.displayName.split(' ')[0];
     
   
-    if(!user) navigate("/login");
+    useEffect(() => {
+      if(user){
+       console.log('hello')
+      }else{
+        navigate("/Login");
+      }
+    }, [user,navigate]);
+  
+
     if(loading) return <h1>Loading...</h1>
     // if(user) navigate("/")
 
@@ -114,8 +122,9 @@ export default function Dashboard() {
         </div>
         </div>
       <br /><br /><br /><br />
-      <button className="signoutBtn " onClick={() => auth.signOut() }>Signout</button>
+      <button className="signoutBtn " >Signout</button>
       <h3 id="console"> </h3>
     </div>
   )
 }
+// onClick={() => auth.signOut() }
