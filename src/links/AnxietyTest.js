@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
 import "../styles/Atest.css"
-import { Button } from '@mui/material';
+import { getDatabase, ref,update,set,onValue} from "firebase/database";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../utils/firebase';
 
 
 export default function AnxietyTest() {
+ const [user, loading] = useAuthState(auth);
 
  const questions = [
 		{
@@ -77,6 +80,15 @@ export default function AnxietyTest() {
     const [QuizEnd, setQuizEnd] = useState(false);
 	const [condition, SetCondition] = useState("");
 	const [Desc, SetDesc] = useState("");
+	const userId= user.displayName.split(' ')[0];
+
+
+
+	function UpdateUserData(userId,Score) {
+		const db = getDatabase();
+		const scoreCardRef = ref(db,'Score-card/' + userId );
+		update(scoreCardRef, { anxietyScore: Score }, { merge: true });
+	  };
 
 
     const handleAnswerButtonClick = (isCorrect) => {
@@ -107,6 +119,7 @@ export default function AnxietyTest() {
 			}
 			
         }
+		UpdateUserData(userId,Score);
     }
 
 	return (

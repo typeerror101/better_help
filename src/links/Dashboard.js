@@ -1,6 +1,7 @@
 import {auth} from "../utils/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from "react-router-dom";
+import { getDatabase, ref, onValue } from 'firebase/database';
 
 //mui
 
@@ -9,14 +10,43 @@ import { IconBase } from 'react-icons';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 
 
+
+
 export default function Dashboard() {
     const [user, loading] = useAuthState(auth);
     const navigate = useNavigate();
     const DisplayName = user.displayName.split(' ')[0];
+    const userId= user.displayName.split(' ')[0];
+    
   
     if(!user) navigate("/login");
     if(loading) return <h1>Loading...</h1>
     // if(user) navigate("/")
+
+    function readScores(userId) {
+      const db = getDatabase();
+      const scoreCardRef = ref(db, 'Score-card/' + userId);
+      
+      onValue(scoreCardRef, (snapshot) => {
+        const scoreCardData = snapshot.val();
+        
+        if (scoreCardData) {
+          const anxietyScore = scoreCardData.anxietyScore;
+          const depressionScore = scoreCardData.depressionScore;
+          
+          console.log('Anxiety Score:', anxietyScore);
+          console.log('Depression Score:', depressionScore);
+        } else {
+          console.log('User not found or scores not available');
+        }
+      }, (error) => {
+        console.log("Error retrieving data: " + error.message);
+      });
+    }
+    
+    // Call the readScores function with the appropriate userId
+  
+    readScores(userId);
     
   return (
     <div className="Mainbox ">
@@ -75,6 +105,7 @@ export default function Dashboard() {
         </div>
       <br /><br /><br /><br />
       <button onClick={() => auth.signOut() }>signOut</button>
+      <h3 id="console">This is console data beta testing</h3>
     </div>
   )
 }
