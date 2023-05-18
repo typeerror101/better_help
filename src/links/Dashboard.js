@@ -45,10 +45,13 @@ export default function Dashboard() {
             <h1>Today's compilation for you</h1>
             <div className='container flex flex-wrap gap-4'>
               <div className='card1 w-2/6 h-40 bg-amber-50 rounded-3xl'>
+                <iframe className='rounded-3xl' src="https://embed.ted.com/talks/sherwin_nuland_how_electroshock_therapy_changed_me" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
               <div className='card2 w-1/6 h-40 bg-amber-50 rounded-3xl'>
+                <iframe className='rounded-3xl' src="https://embed.ted.com/talks/krishna_sudhir_what_yoga_does_to_your_body_and_brain" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
               <div className='card3 w-2/6 h-40 bg-amber-50 rounded-3xl'>
+              <iframe className='rounded-3xl' src="https://embed.ted.com/talks/sangu_delle_there_s_no_shame_in_taking_care_of_your_mental_health" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
             </div>
           </div>
@@ -56,6 +59,7 @@ export default function Dashboard() {
             <h1>A selection of activities and music for you</h1>
             <div className='container flex flex-wrap gap-4'>
               <div className='card1 w-1/6 h-40 bg-amber-50 rounded-3xl'>
+              <iframe className='rounded-3xl' src="https://live.staticflickr.com/4205/35071348993_39e6733199_b.jpg" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
               <div className='card2 w-2/6 h-40 bg-amber-50 rounded-3xl'>
               </div>
