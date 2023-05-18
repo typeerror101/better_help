@@ -8,6 +8,9 @@ import { getDatabase, ref, onValue } from 'firebase/database';
 import { Button } from '@mui/material';
 import { IconBase } from 'react-icons';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
+import SearchIcon from '@mui/icons-material/Search';
+import SearchIconWrapper from '@mui/icons-material/Search';
+import StyledInputBase from '@mui/material/InputBase';
 
 
 
@@ -52,27 +55,34 @@ export default function Dashboard() {
     <div className="Mainbox ">
       <div className='w-auto flex flex-wrap px-5 py-5 m-7 justify-between' >
         <div className="greetText m-3 p-2 rounded-xl" > 
-          <h1>Good Morning, <span>{DisplayName}</span> 👋</h1>
-          <h2>Welcome to your Dashboard </h2>
+          <h1 >Good Afternoon, <span>{DisplayName}</span> 👋</h1>
+          <h2 className="text-slate-100 ">Welcome to your Dashboard </h2>
 
         </div>
-        <div className="w-1/3 m-3 p-2 bg-slate-400 rounded-xl">
-          <div>
-           Talk to you Therapist now
+        <div className="Ai w-1/3 m-3 p-2 bg-slate-300 rounded-xl">
+          <div className="mb-3">
+           Talk to your (🤖) AI Therapist now!
           </div>
-          <Button variant="contained">Start</Button>
+          <Button variant="contained" onClick={ () => {
+            navigate('/HealthBot');
+          }}>Start</Button>
         </div>
       </div>
       <div className='secondContainer flex flex-wrap w- bg-slate-300 rounded-2xl p-5'>
         <div className='leftHalf w-2/3 gap-y-10'>
-          <div className="searchBar w-full flex flex-wrap gap-2">
-            <div className="bg-slate-400 w-4/5 rounded-xl">
-              Search
+       <div className="searchBar w-full flex flex-wrap gap-2">
+            <div className="search-input-container bg-slate-100 w-4/5 rounded-xl">
+            <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+          <StyledInputBase placeholder="Search…"
+            inputProps={{ 'aria-label': 'search' }}
+            style={{ backgroundColor: 'white' }}
+          />
             </div>
-            <FilterAltIcon className='bg-slate-400 '/>
           </div>
           <div className='compilation justify-start p-5'>
-            <h1>Today's compilation for you</h1>
+            <h1 className="mb-6 text-slate-600 ">Today's compilation for you</h1>
             <div className='container flex flex-wrap gap-4'>
               <div className='card1 w-2/6 h-40 bg-amber-50 rounded-3xl'>
                 <iframe className='rounded-3xl' src="https://embed.ted.com/talks/sherwin_nuland_how_electroshock_therapy_changed_me" width="100%" height="100%" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -86,7 +96,7 @@ export default function Dashboard() {
             </div>
           </div>
           <div className='activities justify-start p-5'>
-            <h1>A selection of activities and music for you</h1>
+            <h1 className="mb-6 text-slate-600 " >A selection of activities and music for you</h1>
             <div className='container flex flex-wrap gap-4'>
               <div className='card1 w-1/6 h-40 bg-amber-50 rounded-3xl'>
               <iframe className='rounded-3xl' src="https://live.staticflickr.com/4205/35071348993_39e6733199_b.jpg" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
@@ -104,8 +114,8 @@ export default function Dashboard() {
         </div>
         </div>
       <br /><br /><br /><br />
-      <button onClick={() => auth.signOut() }>signOut</button>
-      <h3 id="console">This is console data beta testing</h3>
+      <button className="signoutBtn " onClick={() => auth.signOut() }>Signout</button>
+      <h3 id="console"> </h3>
     </div>
   )
 }

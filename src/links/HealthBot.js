@@ -13,7 +13,7 @@ const systemMessage = {
   
   
   const HealthBot = () => { 
-    // console.log(API_KEY + "hello");
+    console.log(API_KEY + "hello");
     const [messages, setMessages] = useState([
       {
         message: "Hello, I'm your personal AI therapist! Ask me anything!",
@@ -89,7 +89,7 @@ const systemMessage = {
   
     return (
       <div className="App">
-        <div style={{ position:"relative", height: "800px", width: "700px"  }}>
+        <div style={{ position:"relative", height: "700px", width: "90%"  }}>
           <MainContainer>
             <ChatContainer>       
               <MessageList 
