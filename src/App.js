@@ -11,6 +11,7 @@ import AnxietyTest from './links/AnxietyTest';
 import DepressionTest from './links/DepressionTest';
 import Music from './links/Music';
 import NavBar from './NavBar';
+import HealthBot from './links/HealthBot';
 import { Route, Routes } from "react-router-dom";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path='/blog4' element={<Blog4/>}></Route>
           <Route path='/about' />
           <Route path='/depressionTest' element={<DepressionTest />} />
+          <Route path='/healthbot' element={<HealthBot/>}/>
           <Route path='/faq' />
           <Route path='/parent' element={<Parent />} />
           <Route path='/therapistjobs' />
@@ -39,7 +41,6 @@ function App() {
           <Route path='/getstarted' />
           <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
-
       </div>
 
     </>
