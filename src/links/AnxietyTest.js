@@ -117,8 +117,8 @@ export default function AnxietyTest() {
 					<div className='mainResult'>You have {condition}</div>
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
-				    <div className='score-section'>You scored {Score} out of 32</div>
-					<div className='score-section score-button'>Consult your Therapist now!</div>
+				    <div className='score-section1'>You scored {Score} out of 32</div>
+					<div className='score-section1 score-button1'>Consult your Therapist now!</div>
 			        </div>
 				</div>
 			) : (

@@ -248,7 +248,8 @@ export default function Parent() {
 					<div className='mainResult'>You have {condition}</div>
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
-						<div className='score-section'>You scored {Score} out of 36</div>
+						<div className='score-section
+						'>You scored {Score} out of 36</div>
 						{/* <div className='score-section score-button'>Consult your Therapist now!</div> */}
 					</div>
 				</div>

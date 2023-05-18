@@ -78,7 +78,7 @@
   
   .correct {
     background-color: #2f922f;
-  }You have Minimal Depression
+  }
   
   .incorrect {
     background-color: #ff3333;
@@ -136,9 +136,9 @@
   .score-section{
     font-family: 'Poppins', sans-serif;
     background-color: #ce4076;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin: auto;
-    
+    margin-left: 6rem;
     border-radius: 20px;
     width: 40%;
   }
@@ -148,7 +148,7 @@
     background-color: #ce4076;
     padding: 0.rem;
     margin: auto;
-    
+    margin-left: 2rem;
     border-radius: 20px;
     width: 50%;
   }
@@ -156,12 +156,11 @@
   .score-section:hover{
     font-family: 'Poppins', sans-serif;
     background-color: #df5b8d;
-    padding: 0.5rem;
+    padding: 0.8rem;
     margin: auto;
-    
+    margin-left: 6rem;
     border-radius: 20px;
     width: 40%;
-  
   }
 
   .score-button:hover{
@@ -169,7 +168,7 @@
     background-color: #df5b8d;
     padding: 0.rem;
     margin: auto;
-    
+    margin-left: 2rem;
     border-radius: 20px;
     width: 50%;
   }
