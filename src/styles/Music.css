@@ -1,0 +1,52 @@
+.quote{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+  }
+.quote2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: rgb(235, 230, 223);
+  }
+  .para{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+  }
+  .home{
+    background: linear-gradient(90deg, rgba(2,0,36,0.14058123249299714) 20%, rgba(129,126,171,0) 33%, rgba(215,233,236,0.3702731092436975) 60%, rgba(205,221,229,0.31985294117647056) 100%, rgba(199,231,237,0.2862394957983193) 100%, rgba(0,212,255,1) 100%);
+    /* background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(244, 226, 226)); */
+  }
+  .title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    font-size: 120px;
+    letter-spacing: 0.1px;
+    color: antiquewhite;
+}
+
+#outer-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  #outer-grid > div {
+    
+        background-color: black;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+  }
+  #inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+}
+#inner-grid > div {
+      padding-top: 15px;  
+    background: rgb(49, 49, 49);
+    /* padding: 10px; */
+  }
+.whole{
+    width: 100%; 
+}

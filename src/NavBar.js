@@ -53,7 +53,7 @@ export default function NavBar() {
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/music">Music</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/safeplace">SafePlace</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/healthbot">Bot</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
