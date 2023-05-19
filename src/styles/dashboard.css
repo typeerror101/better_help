@@ -1,0 +1,10 @@
+.boximg{
+    object-fit: cover;
+    background-image: url(https://drscdn.500px.org/photo/1069469377/m%3D900/v2?sig=8e5aa22bfae490546f62524cb8e8166794307f4d96a3d20a7b94be6bef9aaf08);
+    background-size: cover;
+}
+.boximg2{
+    object-fit: cover;
+    background-image: url(https://drscdn.500px.org/photo/1069525054/m%3D900/v2?sig=2146becdd3d90f214615b9c97b99b9c412134d17afee0b2d1872c44ef8ffcf8a);
+    background-size: cover;
+}

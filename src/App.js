@@ -9,6 +9,7 @@ import Blog3 from './links/Blog3';
 import Blog4 from './links/Blog4';
 import Home from './links/Home';
 import Login from './links/Login';
+import Music from './links/Music';
 import Dashboard from './links/Dashboard';
 import Parent from './links/Parent';
 import AnxietyTest from './links/AnxietyTest';
@@ -33,6 +34,7 @@ function App() {
           <Route path='/blog4' element={<Blog4/>}></Route>
           <Route path='/anxietyTest' element={<AnxietyTest/>}/>
           <Route path='/depressionTest' element={<DepressionTest />} />
+          <Route path='/safeplace' element={<Music />} />
           <Route path='/healthbot' element={<HealthBot/>}/>
           <Route path='/faq' />
           <Route path='/parent' element={<Parent />} />

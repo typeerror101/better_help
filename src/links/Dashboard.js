@@ -1,6 +1,9 @@
 import {auth} from "../utils/firebase";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from "react-router-dom";
+
+import "../styles/dashboard.css"
+
 import { getDatabase, ref, onValue } from 'firebase/database';
 
 //mui
@@ -106,12 +109,14 @@ export default function Dashboard() {
           <div className='activities justify-start p-5'>
             <h1 className="mb-6 text-slate-600 " >A selection of activities and music for you</h1>
             <div className='container flex flex-wrap gap-4'>
-              <div className='card1 w-1/6 h-40 bg-amber-50 rounded-3xl'>
-              <iframe className='rounded-3xl' src="https://live.staticflickr.com/4205/35071348993_39e6733199_b.jpg" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+              <div className='boximg2 card1 w-1/6 h-40 bg-amber-50 rounded-3xl'>
+              {/* <iframe className='rounded-3xl' src="https://live.staticflickr.com/4205/35071348993_39e6733199_b.jpg" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> */}
               </div>
               <div className='card2 w-2/6 h-40 bg-amber-50 rounded-3xl'>
+              <iframe className='rounded-3xl' src="https://www.youtube.com/embed/nkqnuxKj8Dk?rel=0" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
               </div>
-              <div className='card3 w-2/6 h-40 bg-amber-50 rounded-3xl'>
+              <div className='boximg card3 w-2/6 h-40 bg-amber-50 rounded-3xl ' >
+              {/* <iframe className='rounded-3xl' src="https://drscdn.500px.org/photo/1069469377/m%3D900/v2?sig=8e5aa22bfae490546f62524cb8e8166794307f4d96a3d20a7b94be6bef9aaf08" width="100%" height="100%"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> */}
               </div>
             </div>
           </div>
