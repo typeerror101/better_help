@@ -54,15 +54,18 @@ export default function NavBar() {
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/about">About</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/safeplace">SafePlace</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/healthbot">Bot</CustomLink>
+                    <CustomLink className="middle-nav-elements" to="/healthbot">Ai-Therapi</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist Jobs</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/support">Support</CustomLink>
+                  {user &&( <CustomLink className="middle-nav-elements" to="/Dashboard">Support</CustomLink>
+                    )}  
                     
                 </ul>
                 <ul>
                     {!user && (
                         <>
+                        
                         <CustomButton sx={{margin:2, color: '#fff',fontSize:14,fontWeight: 700}} size="small">
                         <Link to="/login">Login</Link>
                         </CustomButton>
@@ -70,6 +73,7 @@ export default function NavBar() {
                     )}
                     {user && (
                         <>
+                        
                         <Link>
                             {user.displayName}
                         </Link>

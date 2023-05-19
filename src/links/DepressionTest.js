@@ -2,15 +2,20 @@ import React, {useState} from 'react'
 import "../styles/Dtest.css"
 import { Button } from '@mui/material';
 import { PostAdd } from '@mui/icons-material';
+import {db} from '../utils/firebase'
+import { getDatabase, ref, onValue, set } from "firebase/database";
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { auth } from '../utils/firebase';
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 export default function DepressionTest() {
 
-	const [details, setDetails] = useState({
-		Score: '',
-		Condition: '',
-	})
-
+	
+const [user, loading] = useAuthState(auth);
+const navigate = useNavigate();
 	
  const questions = [
 		{
@@ -110,58 +115,60 @@ export default function DepressionTest() {
     const [QuizEnd, setQuizEnd] = useState(false);
 	const [condition, SetCondition] = useState("Minimal Depression");
 	const [Desc, SetDesc] = useState("");
+	const userId= user.displayName.split(' ')[0];
+
+
+	function writeUserData(userId) {
+		const db = getDatabase();
+		set(ref(db, 'Score_card/' + userId), {
+		  depressionScore: Score,
+		  anxietyScore: '',
+		  parentScore: '',
+		});
+	  };
 
 
 
     const handleAnswerButtonClick = (isCorrect) => {
         const nextQuestion = currentQuestion + 1;
-        setScore(Score+isCorrect);
+        setScore(Score+isCorrect)
+
         if(nextQuestion < questions.length){
             setCurrentQuestion(nextQuestion);
+			console.log(Score);
         }else{
-            console.log(Score);
-            setQuizEnd(true);
+            
+			setQuizEnd(true);
 
 			if(Score < 5){
 				SetCondition("Minimal Depression");
 				SetDesc("Your results indicate that you have none, or very few signs of depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				console.log(Score);
+				
 			}else if(Score >=5 && Score <=9){
 				SetCondition("Mild Depression");
 				SetDesc("Your results indicate that you may be experiencing signs of mild depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				
 			}else if(Score >=10 && Score <=14){
 				SetCondition("Moderate Depression");
 				SetDesc("Your results indicate that you may be experiencing signs of moderate depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				
 			}else if(Score >=15 && Score <=19){
 				SetCondition("Moderately severe depression");
 				SetDesc("Your results indicate that you may be experiencing signs of moderately severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				
 			}else{
 				SetCondition("Severe Depression");
-				SetDesc("Your results indicate that yoYou have Minimal Depressionu may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				SetDesc("Your results indicate that you may have Minimal Depressionu may be experiencing signs of severe depression. These results are not meant to be a diagnosis. You can meet with a doctor or therapist to get a diagnosis and/or access therapy or medications. Sharing these results with someone you trust can be a great place to start.");
+				
 			}
-			
+		
 			
         }
-		
-		const PostData = async(e) => {
-			e.preventDefault()
-	
-			const{Score,Condition}=details;
-	
-			const res = await fetch("https://react-auth-82537-default-rtdb.asia-southeast1.firebasedatabase.app/quizData.json",{
-				method: 'POST',
-				headers:{
-					'Content-Type':'application/json'
-				},
-				body:JSON.stringify({
-					Score,
-					Condition,
-				})
-			})
-
-		  }
-	 	
-		
+		writeUserData(userId);
     }
+
+	
 
 	return (
 		<div>
@@ -172,7 +179,7 @@ export default function DepressionTest() {
 					<div className='scoreDesc'>{Desc}</div>
 					<div className='button-grp'>
 				    <div className='score-section'>You scored {Score} out of 32</div>
-					<div className='score-section score-button'>Consult your Therapist now!</div>
+					<div className='score-section score-button' onClick={() => {navigate('/About')}}>Consult your Therapist now!</div>
 			        </div>
 				</div>
 			) : (
@@ -192,6 +199,8 @@ export default function DepressionTest() {
 			)}
 		</div>
 	)
+	
 }
+
 
     

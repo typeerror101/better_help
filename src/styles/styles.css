@@ -158,23 +158,26 @@ img.MuiCardMedia-root.MuiCardMedia-media.MuiCardMedia-img.css-o69gx8-MuiCardMedi
 
 .Mainbox{
     font-family: 'Rubik' , sans-serif;
-    margin: 10px auto;
-    width: 90%;;
-
+    /* margin: 10px auto; */
+    width: 100%;;
+    background-color: #355b8d65;
     /* background-image: url('../../public/images/blue1.jpeg'); */
     backdrop-filter: blur(3px);
     background-size:auto;
+    border-radius: 5px;
 }
 
 .greetText h1{
     font-weight: 500;
     font-size: 2.5rem;
-    text-shadow: 1px 1px 30px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff;
+    color: #011720;
+    /* text-shadow: 1px 1px 10px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff; */
 }
 
 .greetText h2{
     font-weight: 400;
-    text-shadow: 1px 1px 30px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff;
+    color: #094258;
+    /* text-shadow: 1px 1px 30px #F0EEED, 0 0 3em #ffffff, 0 0 0.2em #ffffff; */
 }
 
 .secondContainer{
@@ -185,3 +188,13 @@ customButton{
     font-weight: 900;
     background-color: aqua;
 }
+
+.signoutBtn{
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 20%;
+    margin-top: -55px;
+    background-color: #0c526e;
+}
+
