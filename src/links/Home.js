@@ -77,7 +77,7 @@ export default function Home(){
                 />
                 <CardContent>
                 <Typography sx={{ fontFamily: 'Caveat', letterSpacing: 1, fontSize: 30, mb:'0' }} gutterBottom variant="h5" component="div">
-                    Is your child mentally happy?
+                    Is your child mentally unhappy?
                 </Typography>
                 <Typography sx={{fontFamily: 'Arial'}} variant="body2" color="text.secondary">
                     Take a Quiz for your child now!

@@ -49,12 +49,12 @@ export default function NavBar() {
     return(
         <div>
             <nav className="nav">
-                <Link to="/" className="site-title" >Better Help</Link>
+                <Link to="/" className="site-title" >Better Health</Link>
                 <ul>
                     <CustomLink className="middle-nav-elements" to="/blog">Blog</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/safeplace">SafePlace</CustomLink>
                     <CustomLink className="middle-nav-elements" to="/healthbot">Ai-Therapi</CustomLink>
-                    <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink>
+                    {/* <CustomLink className="middle-nav-elements" to="/faq">FAQ</CustomLink> */}
                     {/* <CustomLink className="middle-nav-elements" to="/therapistjobs">Therapist</CustomLink> */}
                     <CustomLink className="middle-nav-elements" to="/about">Therapist</CustomLink>
                   {user &&( <CustomLink className="middle-nav-elements" to="/Dashboard">Support</CustomLink>

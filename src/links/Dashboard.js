@@ -127,7 +127,7 @@ export default function Dashboard() {
         </div>
         </div>
       <br /><br /><br /><br />
-      <button className="signoutBtn " >Signout</button>
+      <button className="signoutBtn " onClick={() => auth.signOut() } >Signout</button>
       <h3 id="console"> </h3>
     </div>
   )
